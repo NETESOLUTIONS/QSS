@@ -114,16 +114,19 @@ Key to the Uzzi study, however, is the random graph approach and the mechanism o
 
 A follow-up study using a smaller dataset of 12 million articles, also suggests that Uzzi and colleagues do not fully account for disciplinary and journal effects~\citep{boyack_vs_uzzi_2014}. While the two studies are conceptually similar, the authors of the latter study used Scopus data and the K50 measurement, a derivative of the $\chi^2$ method, rather than Monte Carlo simulations for normalizing observed to expected journal-pair frequencies. Boyack and Klavans note that ``only 64.4\%  of  243  WoS  subject  categories'' in the Uzzi study met the criterion of having the highest probability of hit papers in the HCHN category. Further, they observed that journals vary widely in terms of size and influence and that 20 journals accounted for nearly 15\% of co-citations in their measurements. Lastly, that three multidisciplinary journals accounted for 9.4\% of all atypical combinations, suggesting strong effects from both disciplines and journals. 
 
-Despite different methods used to generate expected values, expected journal-pair frequencies were generated without disciplinary constraints in both these prior studies~\citep{uzzi_atypical_2013,boyack_vs_uzzi_2014}, after which subsets of publications were examined for disciplinary effects. To avoid the problem of discipline-insensitive substitutions, we chose instead to first construct semantically related sets of documents (disciplinary networks) and then measure observed and expected frequencies within these networks. Accordingly, we used keyword searches of the scientific literature to create three citation networks themed around broad search terms. For each of these, we calculated expected values using an efficient simulation algorithm that randomly permuted references grouped by year of publication in a random graph model that accounted for existing citation frequencies in these networks. We hypothesized that our approach would  reduce model misspecification and better simulate citation practice, in turn leading to different and more relevant conclusions. Additionally,while Uzzi et al. averaged the results of 10 simulations for each year in their dataset, we averaged the results of 1,000 simulations per dataset to ensure greater coverage of rarely observed journal pairs (Materials and Methods). Our study on these semantically-themed citation networks reveals significantly different patterns of conventionality and novelty between  citation networks and disciplines that challenges the conclusion of universality in HCHN articles have a greater probability of being represented in highly cited publications. Instead, we conclude that conventional thought as commonly defined in our study, Uzzi, and Boyack is more likely to drive higher citations.. \emph{these are just filler conclusions that must be carefully rewritten and added to}.
+Despite different methods used to generate expected values, expected journal-pair frequencies were generated without disciplinary constraints in both these prior studies~\citep{uzzi_atypical_2013,boyack_vs_uzzi_2014}, after which subsets of publications were examined for disciplinary effects. To avoid the problem of discipline-insensitive substitutions, we chose instead to first construct semantically related sets of documents (disciplinary networks) and then measure observed and expected frequencies within these networks. Accordingly, we used keyword searches of the scientific literature to create three citation networks themed around broad search terms. For each of these, we calculated expected values using an efficient simulation algorithm that randomly permuted references grouped by year of publication in a random graph model that accounted for existing citation frequencies in these networks. We hypothesized that our approach would  reduce model misspecification and better simulate citation practice, in turn leading to different and more relevant conclusions.  Our study on these semantically-themed citation networks reveals significantly different patterns of conventionality and novelty between  citation networks and disciplines that challenges the conclusion of universality in HCHN articles have a greater probability of being represented in highly cited publications. Instead, we conclude that conventional thought as commonly defined in our study, Uzzi, and Boyack is more likely to drive higher citations.. \emph{these are just filler conclusions that must be carefully rewritten and added to}.
 
 \section{Materials and Methods}
-
-\subsection{Bibliographic data} We have previously developed ERNIE, infrastructure to parse the Web of Science (WoS) Core Collection into a relational database that supports analytical studies~\cite{Keserci371955}. WoS data stored in ERNIE spans the period 1900-2019 and consists of over 72 million publications. For this study, we generated an analytical dataset from years 1985 to 2005. The total number of publications in this dataset was just over 25 million publications (25,134,073).  For each of these years, we further restricted analysis to those of type Article. Since WoS data also contains incomplete references or references that point at other indexes,  we also considered only those references for which there were complete records (Table 1). Given consistent trends in the data, we analyzed flanking years and the mid-point (1985, 1995, and 2005). For example, WoS data for year 2005 contained 1,753,174 publications, which after restricting to type Article and considering only those references described above resulted in 916,573 publications, 6,095,594 unique references (set of references), and 17,167,347 total references (multiset of references). 
+\emph{Bibliographic data} We have previously developed ERNIE, an open source knowledge platform into which we parse the Web of Science (WoS) Core Collection~\cite{Keserci371955}. WoS data stored in ERNIE spans the period 1900-2019 and consists of over 72 million publications. For this study, we generated an analytical dataset from years 1985 to 2005. The total number of publications in this dataset was just over 25 million publications (25,134,073).  For each of these years, we further restricted analysis to those of type Article. Since WoS data also contains incomplete references or references that point at other indexes,  we also considered only those references for which there were complete records (Table 1). For example, WoS data for year 2005 contained 1,753,174 publications, which after restricting to type Article and considering only those references described above resulted in 916,573 publications, 6,095,594 unique references (set of references), and 17,167,347 total references (multiset of references). Given consistent trends in the data, we analyzed the two boundary years (1985 and 2005) and the mid-point (1995). \\
+\emph{Disciplinary datasets} We constructed three disciplinary datasets based on keyword searches. (i) immunology (ii) metabolism (iii) applied physics. For the first two, rooted in biomedical research, we searched Pubmed for the term `immunology' or `metabolism' in the years 1985, 1995, and 2005. Pubmed IDs (pmids) returned were converted to WoS IDs (wos\_ids). For the applied physics dataset, we directly searched article level labels in WoS for `applied physics'. \\
+\emph{Normalization of observed and expected values} We analyzed Building upon the work of Uzzi and colleagues, $nC2$ reference pairs were generated for each publication where $n$ is the number of cited references in the publication. These reference pairs were then mapped to the journals they were published in using ISSN numbers creating journal pairs. Where multiple ISSN numbers exist for a journal, the most frequently used one in the WoS was assigned to the journal. In addition, publications containing less than two references were discarded. Journal pair frequencies were summed up across the dataset to create observed frequencies$(F_{obs})$. In contrast to the preceding study~\citep{uzzi_atypical_2013}, we we generated 1,000 rather than 10 null models for each dataset by randomly shuffling references while preserving the number of publications, the number of references in each publication, and the frequency with which these references were cited within the year of interest. Expected values $(F_{exp})$ were generated by averaging the result of 1,000 simulations. z-scores were calculated for each journal-pair using the formula $(F_{obs} - F_{exp})/\sigma$ where $\sigma$
+ is the standard deviation of the frequencies generated by simulation. As a result of these calculations, each publication becomes associated with a set of z-scores corresponding to the journal pairs derived from pairwise combinations of its cited references and positional statistics (quantiles) of z-scores were calculated for each publication. Publications were also labeled according to conventionality and novelty. (i) HC if the median z-score exceeded the median of median z-scores for all publications. LC if the median z-score was equal to or less than the median of median z-scores for all publications (ii) HN if the tenth percentile of z-scores for a publication was less than zero. LN if the tenth percentile of z-scores for a publication was greater than zero. 
 
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
 % Fri May 17 14:28:31 2019
 \begin{table}[ht]
 \caption{Summary of WoS Analytical Dataset. UP: unique publications, UR: unique references, TR: total references. The number of publications, unique references, total references and the ratio of total references to unique references increases monotonically with each year indicating that both the number of documents and citation activity increase over time. Data for reference years is flanked by horizontal lines and shown in boldface. Only publications of type Article and references with complete WoS records are included in these counts.}
+\label{tab:label}
 \centering
 \begin{tabular}{|rrrrr|}
   \hline
@@ -158,7 +161,24 @@ Year & UP & UR & TR & TR/UR \\
 \end{tabular}
 \end{table}
 
-\subsection{Disciplinary datasets}
+ 
+
+
+\begin{table}[ht]
+\caption{Disciplinary Datasets. PubMed and WoS were searched for articles using search terms, `immunology', `metabolism', and `applied physics'. Counts of retrieved publications are shown for each of the three years analyzed.}
+\label{tab:label}
+\centering
+\begin{tabular}{|r r r r|}
+  \hline
+Year & Immunology & Metabolism & Applied Physics \\ 
+  \hline
+1985 & 21,606 & 78,998 & 10,298 \\ 
+1995 & 29,320 & 121,247 & 21,012  \\ 
+2005 & 37,296 & 200,052 & 35,600  \\ 
+ \hline
+\end{tabular}
+\end{table}
+
 
 \section{Results}
 
@@ -168,6 +188,25 @@ Year & UP & UR & TR & TR/UR \\
 (iv) 
 
 \section{Discussion}
+
+
+\acknowledgments
+We deeply thank Kevin Boyack and Dick Klavans for critically constructive discussions. We thank the authors of Uzzi et al. (2013) for sharing their Python simulation code. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. All the code used in this study is freely available from a Github site. Access to bibliographic data requires a license from Clarivate Analytics, which had no role in 
+funding, experimental design, review of results, and conclusions presented. 
+
+\authorcontributions 
+This study was designed by GD, JB, SD, and TW. Simulations and analysis were performed by AD, GC, JB, and SD. Infrastructure, and workflows used to generate data used in this study were developed by AD, DK, SL, SD, and GC.  All authors reviewed and commented on the manuscript, which was written by GC, JB, and TW.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%
+%% The bibliography
+
+\bibliography{cocit_r}
+
+%% No appendices allowed in Network Neuroscience style
+%\appendix
+
+\end{document}
 
 \subsection{Sample Subsection}
 Text here. Text here. Text here. Text here.
@@ -606,21 +645,4 @@ Here you enter further sources of information, if desired.
 % No supportive information is available at this time.
 
 
-\acknowledgments
-We deeply thank Kevin Boyack and Dick Klavans for critically constructive discussions. We thank the authors of Uzzi et al. (2013) for sharing their Python simulation code. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. All the code used in this study is freely available from a Github site. Access to bibliographic data requires a license from Clarivate Analytics, which had no role in 
-funding, experimental design, review of results, and conclusions presented. 
-
-\authorcontributions 
-This study was designed by GD, JB, SD, and TW. Simulations and analysis were performed by AD, GC, JB, and SD. Infrastructure, and workflows used to generate data used in this study were developed by AD, DK, SL, SD, and GC.  All authors reviewed and commented on the manuscript, which was written by GC, JB, and TW.
-
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%
-%% The bibliography
-
-\bibliography{cocit_r}
-
-%% No appendices allowed in Network Neuroscience style
-%\appendix
-
-\end{document}
 
