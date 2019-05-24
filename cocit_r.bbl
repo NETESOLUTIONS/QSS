@@ -7,6 +7,42 @@ Boyack%
 Boyack%
 \ \BBA {} Klavans%
 }{%
+{\protect \APACyear {2010}}%
+}]{%
+boyack_co-citation_2010}
+\APACinsertmetastar {%
+boyack_co-citation_2010}%
+\begin{APACrefauthors}%
+Boyack, K.%
+\BCBT {}\ \BBA {} Klavans, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Co-citation analysis, bibliographic coupling, and direct
+  citation: {Which} citation approach represents the research front most
+  accurately?} {Co-citation analysis, bibliographic coupling, and direct
+  citation: {Which} citation approach represents the research front most
+  accurately?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Society for Information Science
+  and Technology}{61}{12}{2389--2404}.
+\newblock
+\begin{APACrefURL}
+  [{2019-01-05}]\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/asi.21419}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/asi.21419} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Boyack%
+\ \BBA {} Klavans%
+}{%
+Boyack%
+\ \BBA {} Klavans%
+}{%
 {\protect \APACyear {2014}}%
 }]{%
 boyack_vs_uzzi_2014}
@@ -110,9 +146,11 @@ Garfield, E.%
 \newblock
 \APACrefbtitle {{Citation Indexing-Its Theory and Application in Science,
   Technology, and Humanities }} {{Citation Indexing-Its Theory and Application
-  in Science, Technology, and Humanities }}.
+  in Science, Technology, and Humanities }}\ (\PrintOrdinal{1}\ \BEd).
 \newblock
-\APACaddressPublisher{}{John Wiley and Sons, ISI Press}.
+\APACaddressPublisher{The address}{John Wiley and Sons, ISI Press}.
+\newblock
+\APACrefnote{An optional note}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -294,6 +332,32 @@ Patience, G\BPBI S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Perline%
+}{%
+Perline%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+perline_strong_2005}
+\APACinsertmetastar {%
+perline_strong_2005}%
+\begin{APACrefauthors}%
+Perline, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Strong, {Weak} and {False} {Inverse} {Power} {Laws}}
+  {Strong, {Weak} and {False} {Inverse} {Power} {Laws}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Statistical Science}{20}{1}{68--88}.
+\newblock
+\begin{APACrefURL} [{2019-05-22}]\url{https://www.jstor.org/stable/20061161}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Shi%
 , Leskovec%
 \BCBL {}\ \BBA {} McFarland%
@@ -358,6 +422,43 @@ Small, H.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1002/asi.4630240406} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stringer%
+, Sales-Pardo%
+\BCBL {}\ \BBA {} Amaral%
+}{%
+Stringer%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+stringer_statistical_2010}
+\APACinsertmetastar {%
+stringer_statistical_2010}%
+\begin{APACrefauthors}%
+Stringer, M\BPBI J.%
+, Sales-Pardo, M.%
+\BCBL {}\ \BBA {} Amaral, L\BPBI A\BPBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{{\APACmonth{07}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Statistical validation of a global model for the
+  distribution of the ultimate number of citations accrued by papers published
+  in a scientific journal} {Statistical validation of a global model for the
+  distribution of the ultimate number of citations accrued by papers published
+  in a scientific journal}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Society for Information Science
+  and Technology}{61}{7}{1377--1385}.
+\newblock
+\begin{APACrefURL}
+  [{2019-05-22}]\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158611/}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/asi.21335} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

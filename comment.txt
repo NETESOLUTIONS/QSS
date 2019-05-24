@@ -1,0 +1,9 @@
+@george @Tandy Warnow I would like to consider performing an analysis if we think it is of value to the paper given that it would take some time and effort to perform.  I'll outline ti below so that we can discuss.
+
+Here's the issue or question that the analysis would answer:  How much of the results where 28.6% of the z-scores change sign between the WoS and immunology data sets is due to statistical sampling variation.
+
+The Analysis: Use the data from the 1000 samples for both WoS and Immunology and draw many samples form those data sets of sizes, say, n = 200, 500, and then average those samples in terms of the percentage of z-scores that change between samples.  The intent of the analysis would confirm whether
+
+
+
+(Perform analysis of percentages as sample size increases toward 1000 to verify convergence of solution so we can argue these percentages are not due to simulation variation.)
