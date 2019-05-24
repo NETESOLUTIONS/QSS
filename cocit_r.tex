@@ -54,7 +54,7 @@ Network Neuroscience, 1
 
 \begin{document}
 \title[Co-citations in context]{Co-citations in context}
-\subtitle{Disciplinary heterogeneity is relevant}
+\subtitle{disciplinary heterogeneity is relevant}
 
 %% If shortened title for running head is needed so that the article title can fit
 %%   in the running head, use [] argument, ie,
@@ -167,8 +167,6 @@ Year & UP & UR & TR & TR/UR \\
 \end{tabular}
 \end{table}
 
- 
-
 
 \begin{table}[ht]
 \caption{Disciplinary Datasets. PubMed and WoS were searched for articles using search terms, `immunology', `metabolism', and `applied physics'. Counts of retrieved publications are shown for each of the three years analyzed.}
@@ -187,17 +185,53 @@ Year & Immunology & Metabolism & Applied Physics \\
 
 
 \section{Results}
-\subsection{Chacko}
-(i) disciplinary networks are different
-(ii) background makes a difference
-(iii) 
-(iv) 
+\subsection{Chacko} In our study, we also use a Monte Carlo approach to simulate under a random graph model. A  principal consideration, however, was to restrict model misspecification arising from disciplinarily irrelevant references. We addressed this consideration by restricting random substitutions to only those references in the disciplinary network being studied. We estimated model misspecification by measuring the Kullback-Leibler (K-L) Divergence~\citep{kullback_information_1951} between observed and simulated frequencies for the set of journals common to both a disciplinary network and the WoS superset (Table 3). The results indicate that simulations under our model consistently have a lower K-L divergence compared to simulations that draw from the WoS superset and its attendant substitutions that are ectopic with respect to field and discipline (Introduction).
+
+\begin{table}[ht]
+\caption{Measuring Model Misspecification. For the set of journal pairs in common between a disciplinary network and the full WoS dataset, Kullback-Leibler (K-L) divergences
+between empirical and simulated journal pair frequencies were computed for the years 1985, 1995, and 2005 for the three disciplinary datasets (applied\_physics, immunology, and metabolism) using either the disciplinary network as background or the WoS superset (all\_wos) to generate the null model (Background). K-L divergence was calculated using the R seewave package with a base (logarithm) of 2. The ratio between the K-L divergence for disciplinary networks versus the full WoS ranges from 1.96 to 2.77 and is greater than 2.0 for eight out of nine cases, strongly suggesting that simulations that constrain substitutions to the given disciplinary network better model the observed data.}
+\label{tab:label}
+\centering
+\begin{tabular}{|r lrlr r|}
+  \hline
+ & Disciplinary Network & Year & Background & K-L Divergence & Ratio \\ 
+  \hline
+1 & appl\_physics & 1985 & appl\_physics & 1.21 &  \\ 
+  2 &  & 1985 & all\_wos & 2.37 & 1.96 \\ 
+  3 &  & 1995 & appl\_physics & 0.86 &  \\ 
+  4 &  & 1995 & all\_wos & 2.37 & 2.77 \\ 
+  5 &  & 2005 & appl\_physics & 0.95 &  \\ 
+  6 &  & 2005 & all\_wos & 2.35 & 2.47 \\ 
+    \hline
+  7 & immunology & 1985 & immunology & 0.75 &  \\ 
+  8 &  & 1985 & all\_wos & 1.68 & 2.24 \\ 
+  9 &  & 1995 & immunology & 0.78 &  \\ 
+  10 &  & 1995 & all\_wos & 1.70 & 2.19 \\ 
+  11 &  & 2005 & immunology & 0.73 &  \\ 
+  12 &  & 2005 & all\_wos & 1.92 & 2.63 \\ 
+    \hline
+  13 & metabolism & 1985 & metabolism & 1.11 &  \\ 
+  14 &  & 1985 & all\_wos & 2.24 & 2.02 \\ 
+  15 &  & 1995 & metabolism & 1.07 &  \\ 
+  16 &  & 1995 & all\_wos & 2.33 & 2.17 \\ 
+  17 &  & 2005 & metabolism & 1.19 &  \\ 
+  18 &  & 2005 & all\_wos & 2.60 & 2.18 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{figure}
+\includegraphics[width=\hsize]{Fig1}
+\caption{Fraction of publications with high conventionality (HC) and high novelty (HN) signatures relative to citation count.}
+\end{figure}
+
 
 \section{Discussion}
 
 
 \acknowledgments
-We are grateful to Kevin Boyack and Dick Klavans for critically constructive discussions. We thank the authors of Uzzi et al. (2013) for sharing their Python simulation code. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. All the code used in this study is freely available from a Github site. Access to the bibliographic data analyzed in this study requires a license from Clarivate Analytics, which had no role in funding, experimental design, review of results, and conclusions presented. 
+We are grateful to Kevin Boyack and Dick Klavans for constructively critical discussions. We thank the authors of Uzzi et al. (2013) for sharing their Python simulation code. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. All the code used in this study is freely available from a Github site. Access to the bibliographic data analyzed in this study requires a license from Clarivate Analytics, which had no role in funding, experimental design, review of results, and conclusions presented. 
 
 \authorcontributions 
 This study was designed by GD, JB, SD, and TW. Simulations and analysis were performed by AD, GC, JB, and SD. Infrastructure, and workflows used to generate data used in this study were developed by AD, DK, SL, SD, and GC.  All authors reviewed and commented on the manuscript, which was written by GC, JB, and TW.
