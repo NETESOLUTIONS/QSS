@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  28 MAY 2019 10:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  28 MAY 2019 10:42
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -1042,7 +1042,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 133.
+(amsmath)                 on input line 130.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1060,131 +1060,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [3]
 
 Package natbib Warning: Citation `kullback_information_1951' on page 4 undefine
-d on input line 197.
+d on input line 195.
 
-
-Underfull \vbox (badness 2035) has occurred while \output is active []
-
-
-Overfull \hbox (1.80502pt too wide) has occurred while \output is active
-[] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-  []
- []
-
-[4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.198 
-      ]
-<Fig1.pdf, id=139, 505.89pt x 361.35pt>
+<Fig1.pdf, id=131, 505.89pt x 361.35pt>
 File: Fig1.pdf Graphic file (type pdf)
 <use Fig1.pdf>
-Package pdftex.def Info: Fig1.pdf  used on input line 234.
+Package pdftex.def Info: Fig1.pdf  used on input line 232.
 (pdftex.def)             Requested size: 379.4175pt x 271.01735pt.
-
-Overfull \hbox (1.80502pt too wide) has occurred while \output is active
-[] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-  []
- []
-
-[5pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.241 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.241 
-       <./Fig1.pdf>]
-<fig2_scatter_z_scores_flattened.pdf, id=159, 433.62pt x 433.62pt>
+<fig2_scatter_z_scores_flattened.pdf, id=136, 433.62pt x 433.62pt>
 File: fig2_scatter_z_scores_flattened.pdf Graphic file (type pdf)
 <use fig2_scatter_z_scores_flattened.pdf>
 Package pdftex.def Info: fig2_scatter_z_scores_flattened.pdf  used on input lin
-e 245.
+e 243.
 (pdftex.def)             Requested size: 216.81pt x 216.80946pt.
-<Fig2H01N10.pdf, id=160, 323.67323pt x 755.23758pt>
+<Fig2H01N10.pdf, id=137, 323.67323pt x 755.23758pt>
 File: Fig2H01N10.pdf Graphic file (type pdf)
 <use Fig2H01N10.pdf>
-Package pdftex.def Info: Fig2H01N10.pdf  used on input line 263.
+Package pdftex.def Info: Fig2H01N10.pdf  used on input line 261.
 (pdftex.def)             Requested size: 108.405pt x 252.9399pt.
-<Fig2H10N10.pdf, id=161, 323.62505pt x 755.22153pt>
+<Fig2H10N10.pdf, id=138, 323.62505pt x 755.22153pt>
 File: Fig2H10N10.pdf Graphic file (type pdf)
 <use Fig2H10N10.pdf>
-Package pdftex.def Info: Fig2H10N10.pdf  used on input line 263.
+Package pdftex.def Info: Fig2H10N10.pdf  used on input line 261.
 (pdftex.def)             Requested size: 108.405pt x 252.9806pt.
 
-Overfull \hbox (1.80502pt too wide) has occurred while \output is active
-[] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-  []
- []
-
-[6pdfTeX warning (ext4): destination with the same identifier (name{table.3}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.290 
-      ]
-Overfull \hbox (1.80502pt too wide) has occurred while \output is active
-[] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-  []
- []
-
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.290 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.290 
-       <./fig2_scatter_z_scores_flattened.pdf>]
-Overfull \hbox (1.80502pt too wide) has occurred while \output is active
-[] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-  []
- []
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.290 
-       <./Fig2H01N10.pdf> <./Fig2H10N10.pdf
-
-pdfTeX warning: pdflatex (file ./Fig2H10N10.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
->]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1197,7 +1096,110 @@ Underfull \hbox (badness 10000) has occurred while \output is active
   []
  []
 
-[9]
+[4]
+Overfull \hbox (1.80502pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+  []
+ []
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 
+       <./Fig1.pdf> <./fig2_scatter_z_scores_flattened.pdf>]
+Overfull \hbox (1.80502pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+  []
+ []
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 
+       <./Fig2H01N10.pdf> <./Fig2H10N10.pdf
+
+pdfTeX warning: pdflatex (file ./Fig2H10N10.pdf): PDF inclusion: multiple pdfs 
+with page group included in a single page
+>]
+Overfull \hbox (1.80502pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+  []
+ []
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 
+      ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (1.80502pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+  []
+ []
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{table.3}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.291 W
+       e also tested the explanatory power of each framework dimension by cl...
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (1.80502pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+  []
+ []
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{table.4}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.299 
+      ]
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
  []
@@ -1234,7 +1236,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 507--529
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1246,10 +1248,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
  (cocit_r.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 319.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 317.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1260,13 +1262,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19069 strings out of 492973
- 326784 string characters out of 3135929
- 444270 words of memory out of 3000000
- 22689 multiletter control sequences out of 15000+200000
+ 19070 strings out of 492973
+ 326792 string characters out of 3135929
+ 445433 words of memory out of 3000000
+ 22690 multiletter control sequences out of 15000+200000
  578823 words of font info for 124 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 47i,20n,65p,2002b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,20n,65p,2027b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1278,9 +1280,9 @@ KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on cocit_r.pdf (11 pages, 1019351 bytes).
+Output written on cocit_r.pdf (11 pages, 1019056 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
+ 437 PDF objects out of 1000 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
