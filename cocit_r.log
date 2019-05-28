@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  28 MAY 2019 08:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  28 MAY 2019 10:03
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -951,6 +951,13 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.52322pt on input line 100.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.9395pt on input line 100.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.5> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 110.
+
+
+Package natbib Warning: Citation `10.3389/frma.2018.00020' on page 1 undefined 
+on input line 110.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1035,7 +1042,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 127.
+(amsmath)                 on input line 133.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1051,15 +1058,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3]
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.5> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 191.
-
 
 Package natbib Warning: Citation `kullback_information_1951' on page 4 undefine
-d on input line 191.
+d on input line 197.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2035) has occurred while \output is active []
 
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
@@ -1076,12 +1080,12 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.192 
+l.198 
       ]
-<Fig1.pdf, id=138, 505.89pt x 361.35pt>
+<Fig1.pdf, id=139, 505.89pt x 361.35pt>
 File: Fig1.pdf Graphic file (type pdf)
 <use Fig1.pdf>
-Package pdftex.def Info: Fig1.pdf  used on input line 228.
+Package pdftex.def Info: Fig1.pdf  used on input line 234.
 (pdftex.def)             Requested size: 379.4175pt x 271.01735pt.
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
@@ -1098,29 +1102,29 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.235 
+l.241 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.235 
+l.241 
        <./Fig1.pdf>]
-<fig2_scatter_z_scores_flattened.pdf, id=158, 433.62pt x 433.62pt>
+<fig2_scatter_z_scores_flattened.pdf, id=159, 433.62pt x 433.62pt>
 File: fig2_scatter_z_scores_flattened.pdf Graphic file (type pdf)
 <use fig2_scatter_z_scores_flattened.pdf>
 Package pdftex.def Info: fig2_scatter_z_scores_flattened.pdf  used on input lin
-e 239.
+e 245.
 (pdftex.def)             Requested size: 216.81pt x 216.80946pt.
-<Fig2H01N10.pdf, id=159, 323.67323pt x 755.23758pt>
+<Fig2H01N10.pdf, id=160, 323.67323pt x 755.23758pt>
 File: Fig2H01N10.pdf Graphic file (type pdf)
 <use Fig2H01N10.pdf>
-Package pdftex.def Info: Fig2H01N10.pdf  used on input line 257.
+Package pdftex.def Info: Fig2H01N10.pdf  used on input line 263.
 (pdftex.def)             Requested size: 108.405pt x 252.9399pt.
-<Fig2H10N10.pdf, id=160, 323.62505pt x 755.22153pt>
+<Fig2H10N10.pdf, id=161, 323.62505pt x 755.22153pt>
 File: Fig2H10N10.pdf Graphic file (type pdf)
 <use Fig2H10N10.pdf>
-Package pdftex.def Info: Fig2H10N10.pdf  used on input line 257.
+Package pdftex.def Info: Fig2H10N10.pdf  used on input line 263.
 (pdftex.def)             Requested size: 108.405pt x 252.9806pt.
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
@@ -1137,7 +1141,7 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.284 
+l.290 
       ]
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1153,13 +1157,13 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.284 
+l.290 
       pdfTeX warning (ext4): destination with the same identifier (name{table.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.284 
+l.290 
        <./fig2_scatter_z_scores_flattened.pdf>]
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1175,7 +1179,7 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.284 
+l.290 
        <./Fig2H01N10.pdf> <./Fig2H10N10.pdf
 
 pdfTeX warning: pdflatex (file ./Fig2H10N10.pdf): PDF inclusion: multiple pdfs 
@@ -1230,7 +1234,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 507--529
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1242,10 +1246,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
  (cocit_r.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 313.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 319.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1258,11 +1262,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  19069 strings out of 492973
  326784 string characters out of 3135929
- 444296 words of memory out of 3000000
+ 444270 words of memory out of 3000000
  22689 multiletter control sequences out of 15000+200000
  578823 words of font info for 124 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 47i,20n,65p,2198b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,20n,65p,2002b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1274,9 +1278,9 @@ KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on cocit_r.pdf (11 pages, 1019002 bytes).
+Output written on cocit_r.pdf (11 pages, 1019351 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
+ 439 PDF objects out of 1000 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
