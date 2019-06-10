@@ -221,6 +221,38 @@ Klavans, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kullback%
+\ \BBA {} Leibler%
+}{%
+Kullback%
+\ \BBA {} Leibler%
+}{%
+{\protect \APACyear {1951}}%
+}]{%
+kullback_information_1951}
+\APACinsertmetastar {%
+kullback_information_1951}%
+\begin{APACrefauthors}%
+Kullback, S.%
+\BCBT {}\ \BBA {} Leibler, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1951}{{\APACmonth{03}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On {Information} and {Sufficiency}} {On {Information}
+  and {Sufficiency}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Annals of Mathematical Statistics}{22}{1}{79--86}.
+\newblock
+\begin{APACrefURL}
+  [{2019-05-22}]\url{https://projecteuclid.org/euclid.aoms/1177729694}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1214/aoms/1177729694} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Marshakova-Shaikevich%
 }{%
 Marshakova-Shaikevich%
@@ -525,6 +557,37 @@ Wallace, M\BPBI L.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1371/journal.pone.0033339} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zuckerman%
+}{%
+Zuckerman%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+10.3389/frma.2018.00020}
+\APACinsertmetastar {%
+10.3389/frma.2018.00020}%
+\begin{APACrefauthors}%
+Zuckerman, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Sociology of Science and the Garfield Effect: Happy
+  Accidents, Unanticipated Developments and Unexploited Potentials} {The
+  sociology of science and the garfield effect: Happy accidents, unanticipated
+  developments and unexploited potentials}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in Research Metrics and Analytics}{3}{}{20}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.frontiersin.org/article/10.3389/frma.2018.00020}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3389/frma.2018.00020} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
