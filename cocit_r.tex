@@ -119,13 +119,14 @@ Our analysis of these semantically-themed citation networks challenges the asser
 
 \section{Materials and Methods}
 \emph{Bibliographic data} We have previously developed ERNIE, an open source knowledge platform into which we parse the Web of Science (WoS) Core Collection~\citep{Keserci371955}. WoS data stored in ERNIE spans the period 1900-2019 and consists of over 72 million publications. For this study, we generated an analytical dataset from years 1985 to 2005 using data in ERNIE. The total number of publications in this dataset was just over 25 million publications (25,134,073), which were then stratified by year of publication. For each of these years, we further restricted analysis to publications of type Article. Since WoS data also contains incomplete references or references that point at other indexes, we also considered only those references for which there were complete records~(Table \ref{tab:summary_data}). For example, WoS data for year 2005 contained 1,753,174 publications, which after restricting to type Article and considering only those references described above resulted in 916,573 publications, 6,095,594 unique references (set of references), and 17,167,347 total references (multiset of references). Given consistent trends in the data, Table \ref{tab:summary_data}, we analyzed the two boundary years (1985 and 2005) and the mid-point (1995). We also used the number of times each of these articles was cited in the first 8 years since publication as a measure of its impact.
-
+\vspace{-4mm}
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
 % Fri May 17 14:28:31 2019
 \begin{table}[ht]
 \caption{Summary of base WoS Analytical Dataset.The number of publications of type Article (UP), unique references (UR), total references (TR) and the ratio of total references to unique references increases monotonically with each year indicating that both the number of documents and citation activity increase over time. Only publications of type Article with at least two references, and references with complete publication data were included.} 
 \label{tab:summary_data}
 \centering
+\scalebox{0.7}{
 \begin{tabular}{|r rrrr|}
   \hline
 year & UP & UR & TR & TR/UR \\ 
@@ -156,11 +157,12 @@ year & UP & UR & TR & TR/UR \\
    \hline
  2005 & 886,648 & 6,615,824 & 19,036,324 & 2.88 \\ 
  \hline
-\end{tabular}
+\end{tabular}}
+\vspace{-4mm}%Put here to reduce too much white space after your table 
 \end{table}
 
 We constructed three disciplinary datasets based on keyword searches. (i) immunology (ii) metabolism (iii) applied physics. For the first two, rooted in biomedical research, we searched Pubmed for the term `immunology' or `metabolism' in the years 1985, 1995, and 2005~(Table \ref{tab:disc-datasets}). Pubmed IDs (pmids) returned were matched to WoS IDs (wos\_ids) and used to retrieve relevant articles. For the applied physics dataset, we directly searched traditional subject labels in WoS for `applied physics'. We also examined publications in the five major research areas in the Web of Science; life sciences \& biomedicine, physical sciences, technology, social sciences, arts \& humanities using the extended subcategory classification of 153 sub-groups to categorize disciplinary composition of cited references in the datasets we studied.
-
+\vspace{-2 mm}
 \begin{table}[ht]
 \caption{Disciplinary Datasets. PubMed and WoS were searched for articles using search terms, `immunology', `metabolism', and `applied physics'. Counts of publications are shown for each of the three years analyzed and expressed in parentheses as a percentage of the total number of publications in our analytical WoS dataset (Table \ref{tab:summary_data}) for that year.}
 \label{tab:disc-datasets}
@@ -174,6 +176,7 @@ Year & Immunology & Metabolism & Applied Physics \\
 2005 & 37,296 (4.2\%) & 200,052 (22.6\%) & 35,600 (4.0\%)  \\ 
  \hline
 \end{tabular}
+\vspace{-6mm}
 \end{table}
 
 \emph{Monte Carlo simulations, normalization of observed frequencies, annotations, and `hit' papers}. Analysis was performed on publications from 1985, 1995, and 2005. Building upon prior work~\cite{uzzi_atypical_2013}, all ${n \choose 2}$ reference pairs were generated for each publication, where $n$ is the number of cited references in the publication. These reference pairs were then mapped to the journals they were published in using ISSN numbers as identifiers. Where multiple ISSN numbers exist for a journal, the most frequently used one in the WoS was assigned to the journal. In addition, publications containing fewer than two references were discarded. Journal pair frequencies were summed across the dataset to create observed frequencies $(F_{obs})$. 
