@@ -215,42 +215,52 @@ A symptom of model misspecification is that random sampling of citations associa
 \label{fig:be}
 \end{figure}
 
-We also analyzed the consequences of citation shuffling within a disciplinary set or all of the Web of Science.  References in publications belonging to these three datasets were classified using the WoS Extended Subjects classification of 153 subject areas and summarized as a frequency distribution. A single shuffle of the references in these datasets or all the references in the corresponding WoS year slice was performed, using either the \emph{repcs}  or \emph{umsj} algorithms, after which subject frequencies were computed again. The fold change in subject frequencies of references before and after shuffling was calculated for these groups using all 153 Subject categories and are summarized as boxplots in Fig \ref{fig:be}. For example, the applied physics dataset contained 1 reference labeled Genetics and Heredity . This proportion was preserved in the intra-network shuffle but increased 1496 times when the WoS background was used as a source of substitution during Monte Carlo simulation with the \emph{repcs}   algorithm. Similarly, with the metabolism dataset.which contained one reference labeled Philosophy that was increased to 661 after a single \emph{repcs}  shuffle. The data show convincingly that the disciplinary composition of references in a network is preserved when citation shuffling is conducted within it but is significantly distorted when the WoS superset is used as a source of substitution. A second inference is that the choice between these two algorithms is not relevant beyond runtime advantage but that the background network used for the shuffle is critical.
+We also analyzed the consequences of citation shuffling within a disciplinary set or all of the Web of Science.  References in publications belonging to these three datasets were classified using the WoS Extended Subjects classification of 153 subject areas and summarized as a frequency distribution. A single shuffle of the references in these datasets or all the references in the corresponding WoS year slice was performed, using either the \emph{repcs}  or \emph{umsj} algorithms, after which subject frequencies were computed again. The fold change in subject frequencies of references before and after shuffling was calculated for these groups using all 153 subject categories and are summarized as boxplots in Fig \ref{fig:be}. 
+For example, the applied physics dataset contained one reference labeled Genetics and Heredity, but after the shuffle (using the WoS background), there were 1496 references labeled Genetics and Heredity. 
+%This proportion was preserved in the intra-network shuffle but increased 1496 times when the WoS background was used as a source of substitution during the Monte Carlo simulation with the \emph{repcs}   algorithm. 
+Similarly,  the metabolism dataset  contained one reference labeled Philosophy, but after a single shuffle (again using the WoS background), there were   661 occurrences with this label.
+%after a single \emph{repcs}  shuffle. 
+The data show convincingly that the disciplinary composition of references in a network is preserved when citation shuffling is constrained to the subnetwork, but is significantly distorted when the WoS superset is used as a source of substitution. A second inference is that the choice between these two algorithms is not relevant (except for running time considerations), and that the background network used for the shuffle is critical.
 
 \begin{table}[ht]
 \caption{Measuring Model Misspecification. For the set of journal pairs in common between a disciplinary network and the full WoS dataset, Kullback-Leibler (K-L) divergences
-between empirical and simulated journal pair frequencies were computed for the years 1985, 1995, and 2005 for the three disciplinary datasets (applied\_physics, immunology, and metabolism) using either the disciplinary network as background or the WoS superset (all\_wos) to generate the null model (Background). K-L divergence was calculated using the R seewave package with a base (logarithm) of 2. The ratio between the K-L divergence for disciplinary networks versus the full WoS ranges from 1.96 to 2.77 and is greater than 2.0 for eight out of nine cases, strongly suggesting that simulations that constrain substitutions to the given disciplinary network better model the observed data.}
+between empirical and simulated journal pair frequencies were computed for the years 1985, 1995, and 2005 for the three disciplinary datasets (applied\_physics, immunology, and metabolism) using either the disciplinary network as background or the WoS superset (all\_wos) to generate the null model (Background). K-L divergence was calculated using the R seewave package \citep{seewave2008} with a base (logarithm) of 2. }
 \label{tab:kld}
 \centering
-\begin{tabular}{|r lrlr r|}
+\begin{tabular}{ccccccc} 
   \hline
- & Disciplinary Network & Year & Background & K-L Divergence & Ratio \\ 
+ Disciplinary Network & Year & Background & K-L Divergence & Ratio \\ 
   \hline
-1 & appl\_physics & 1985 & appl\_physics & 1.21 &  \\ 
-  2 &  & 1985 & all\_wos & 2.37 & 1.96 \\ 
-  3 &  & 1995 & appl\_physics & 0.86 &  \\ 
-  4 &  & 1995 & all\_wos & 2.37 & 2.77 \\ 
-  5 &  & 2005 & appl\_physics & 0.95 &  \\ 
-  6 &  & 2005 & all\_wos & 2.35 & 2.47 \\ 
+ appl\_physics & 1985 & appl\_physics & 1.21 &  \\ 
+  & 1985 & all\_wos & 2.37 & 1.96 \\ 
+  & 1995 & appl\_physics & 0.86 &  \\ 
+  & 1995 & all\_wos & 2.37 & 2.77 \\ 
+  & 2005 & appl\_physics & 0.95 &  \\ 
+  & 2005 & all\_wos & 2.35 & 2.47 \\ 
     \hline
-  7 & immunology & 1985 & immunology & 0.75 &  \\ 
-  8 &  & 1985 & all\_wos & 1.68 & 2.24 \\ 
-  9 &  & 1995 & immunology & 0.78 &  \\ 
-  10 &  & 1995 & all\_wos & 1.70 & 2.19 \\ 
-  11 &  & 2005 & immunology & 0.73 &  \\ 
-  12 &  & 2005 & all\_wos & 1.92 & 2.63 \\ 
+  immunology & 1985 & immunology & 0.75 &  \\ 
+  & 1985 & all\_wos & 1.68 & 2.24 \\ 
+   & 1995 & immunology & 0.78 &  \\ 
+   & 1995 & all\_wos & 1.70 & 2.19 \\ 
+   & 2005 & immunology & 0.73 &  \\ 
+  & 2005 & all\_wos & 1.92 & 2.63 \\ 
     \hline
-  13 & metabolism & 1985 & metabolism & 1.11 &  \\ 
-  14 &  & 1985 & all\_wos & 2.24 & 2.02 \\ 
-  15 &  & 1995 & metabolism & 1.07 &  \\ 
-  16 &  & 1995 & all\_wos & 2.33 & 2.17 \\ 
-  17 &  & 2005 & metabolism & 1.19 &  \\ 
-  18 &  & 2005 & all\_wos & 2.60 & 2.18 \\ 
+ metabolism & 1985 & metabolism & 1.11 &  \\ 
+   & 1985 & all\_wos & 2.24 & 2.02 \\ 
+  & 1995 & metabolism & 1.07 &  \\ 
+  & 1995 & all\_wos & 2.33 & 2.17 \\ 
+     & 2005 & metabolism & 1.19 &  \\ 
+   & 2005 & all\_wos & 2.60 & 2.18 \\ 
    \hline
 \end{tabular}
 \end{table}
 
-We predicted that model misspecification as measured by the Kullback-Leibler (K-L) Divergence~\citep{kullback_information_1951} between observed and simulated frequencies in a disciplinary network would be less than the divergence for observed and simulated frequencies in the WoS superset. The results in Table \ref{tab:kld} indicate that for the set of journals common to both a disciplinary network and the WoS superset, simulations under our model consistently have a lower K-L divergence, roughly half, compared to simulations that draw from the WoS superset (and its attendant substitutions that are ectopic with respect to field and discipline).
+We predicted that model misspecification, as measured by the Kullback-Leibler (K-L) Divergence~\citep{kullback_information_1951} between observed and simulated frequencies, constraining  reference substitutions to the disciplinary subnetwork would be less than the
+model misspecification when substitutions are drawn equiprobably from all of 
+the WoS superset. 
+The results in Table \ref{tab:kld} indicate that for the set of journals common to both a disciplinary network and the WoS superset,  confirm this prediction: simulations under our model (which constrains substitutions to the
+disciplinary subnetwork) consistently have a lower K-L divergence compared to simulations that draw from the WoS superset. 
+Furthermore, the K-L divergence for  the unconstrained model (where the references are equiprobable and allowed to be taken from all of WoS) is generally twice as large as the K-L divergence for the models where the references are constrained to  the disciplinary subnetworks (a ratio of 1.96 to 2.77,  and  greater than 2.0 for eight out of nine cases), demonstrating that simulations that constrain substitutions to the given disciplinary network better model the observed data.
 
 \subsection{Novelty and Conventionality as Determinants of Impact in Disciplinary Contexts}
 \begin{figure*}
@@ -259,7 +269,7 @@ We predicted that model misspecification as measured by the Kullback-Leibler (K-
 \includegraphics[width=1.5in]{Fig2H01N10.pdf} & \includegraphics[width=1.5in]{Fig2H10N10.pdf} \\
 (a) Top 1\% of cited articles & (b) Top 10\% of cited articles \\
 \end{tabular}
-\caption{Effect of Context on Journal-Pair z-scores and Categorical Hit Rates: Immunology, Applied Physics, and WoS for 1995. Panels (a) and (b) show hit rates for the LNLC, LNHC, HNLC, and HNHC categories for the immunology, applied physics, and WoS datasets when hit articles are defined as the top 1\% and top 10\% of articles, respectively.  Novelty in both panels is defined at the 10th percentile of articles' z-score distributions. The number of data points in the immunology, applied physics, and WoS data sets are 21,917, 18,305, and 476,288, respectively.  The results for the WoS data set mirrored previous results from Uzzi et al. ~\citep{uzzi_atypical_2013} where the highest hit rate was for the HNHC category.  The highest hit rates for the immunology dataset, in contrast, are in the LNHC category. The LNHC category often had the highest hit rate for the immunology dataset for various parameter settings with the HCHN category having the highest hit rate in other cases: metabolism results are similar. The applied physics dataset shows further contrast as the hit rate for it was highest in the HNLC category.  The HNLC category demonstrated the highest hit rate often for applied physics: otherwise the highest hit rate was for HNHC articles.}
+\caption{Effect of Context on Journal-Pair z-scores and Categorical Hit Rates: Immunology, Applied Physics, and WoS for 1995. Panels (a) and (b) show hit rates for the LNLC, LNHC, HNLC, and HNHC categories for the immunology, applied physics, and WoS datasets when hit articles are defined as the top 1\% and top 10\% of articles, respectively.  Novelty in both panels is defined at the 10th percentile of articles' z-score distributions. The number of data points in the immunology, applied physics, and WoS data sets are 21,917, 18,305, and 476,288, respectively.  The results for the WoS data set mirrored previous results from \cite{uzzi_atypical_2013}, where the highest hit rate was for the HNHC category.  The highest hit rates for the immunology dataset, in contrast, are in the LNHC category. The LNHC category often had the highest hit rate for the immunology dataset for various parameter settings with the HCHN category having the highest hit rate in other cases: metabolism results are similar. The applied physics dataset shows further contrast as the hit rate for it was highest in the HNLC category.  The HNLC category demonstrated the highest hit rate often for applied physics: otherwise the highest hit rate was for HNHC articles.}
 \label{fig:Fig2}
 \end{figure*}
 
@@ -268,7 +278,7 @@ Figure \ref{fig:Fig2}, Panels (a) and (b), compares hit rates for the four categ
 
 \begin{table}%[tbhp]
 \centering
-\caption[Hit Rates]{Hit Rates by Category. The last four columns indicate the proportion of publications that are hits for each respective category.} \label{Tab:HitRate}
+\caption[Hit Rates]{Hit Rates by Category for the 1995 datasets. The last four columns indicate the proportion of publications that are hits for each respective category.} \label{Tab:HitRate}
 \begin{tabular}{crrrrrrr}
 & \multicolumn{1}{c}{Hits as \%} & \multicolumn{1}{c}{Novelty}  &  &  &  &  \\ Data Set & \multicolumn{1}{c}{of Articles} & \multicolumn{1}{c}{Percentile} & \multicolumn{1}{c}{LNLC} & \multicolumn{1}{c}{LNHC} & \multicolumn{1}{c}{HNLC} & \multicolumn{1}{c}{HNHC} \\ \hline
    
@@ -293,12 +303,16 @@ We also tested the explanatory power of each framework dimension by classifying 
 \section{Discussion}
 
 \emph{needs to be expanded}
-We conclude that high hit rates in the HNHC category do not hold generally for all datasets and that conventionality flavored with novelty is not always indicative of impactful research. The z-scores that change sign across datasets is either contradictory or an acceptable variation due to the difference in reference sets. We contend that it is the former because the inappropriate substitution of citations with those from disciplines that are implausible and because the observed citation frequencies are ignored. That fewer z-scores are negative in the WoS dataset relative to the immunology dataset may be directly due to the uniform sampling of references whereby many resulting journal pairs are never observed in the literature and so that the expected frequencies of those observed pairs have lower expected values, thus biasing their z-scores upward. In addition, treating citation as a set versus a multiset means that a random model will sample popular citations downward, thus further increasing their z-scores.\emph{need confirmation from Jim here}.
+We conclude that high hit rates in the HNHC category do not hold generally for all datasets and that conventionality flavored with novelty is not always indicative of impactful research. 
+%The z-scores that change sign across datasets is either contradictory or an acceptable variation due to the difference in reference sets. We contend that it is the former because the inappropriate substitution of citations with those from disciplines that are implausible and because the observed citation frequencies are ignored. 
+That fewer z-scores are negative in the WoS dataset relative to the immunology dataset may be directly due to the uniform sampling of references, whereby many resulting journal pairs are never observed in the literature and so the expected frequencies of those observed pairs have lower expected values, thus biasing their z-scores upward. In addition, treating citation as a set versus a multiset means that a random model will sample popular citations downward, thus further increasing their z-scores.\emph{need confirmation from Jim here}.
 
-Contrary to Uzzi et al., we found the category displaying the highest hit rate to be sensitive to the experimental parameter settings, which included the percentage of articles deemed to be hits and the percentile of articles' z-score distributions that delineated between articles of low novelty and high novelty. Faced with this lack of robustness, we are confronted with the necessity of defining defendable parameters, if possible, that determine novelty and conventionalty. More significantly, we should question whether the simple approach of defining novelty and conventionality as is done this article and other research is sufficient or whether we should expect such variation in the factors associated with impact as we have observed.
+Contrary to Uzzi et al., we found the category displaying the highest hit rate to be sensitive to the experimental parameter settings, which included the percentage of articles deemed to be hits and the percentile of articles' z-score distributions that delineated between articles of low novelty and high novelty. Faced with this lack of robustness, we are confronted with the necessity of defining defendable parameters, if possible, that determine novelty and conventionality. 
+More significantly, we should question whether the simple approach of defining novelty and conventionality as is done this article and other research is sufficient or whether we should expect such variation in the factors associated with impact as we have observed.
 
 \acknowledgments
-We are grateful to Kevin Boyack and Dick Klavans for constructively critical discussions. We thank the authors of Uzzi et al. (2013) for sharing their Python simulation code. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. All the code used in this study is freely available from a Github site. Access to the bibliographic data analyzed in this study requires a license from Clarivate Analytics, which had no role in funding, experimental design, review of results, and conclusions presented. 
+We are grateful to Kevin Boyack and Dick Klavans for constructively critical discussions. We thank the authors of \cite{uzz_atypical_2013i} for sharing their Python simulation code. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. 
+All the code used in this study is freely available from a Github site. Access to the bibliographic data analyzed in this study requires a license from Clarivate Analytics, which had no role in funding, experimental design, review of results, and conclusions presented. 
 
 \authorcontributions 
 This study was designed by GC, JB, SD, and TW. Simulations and analysis were performed by AD, DLH, GC, JB, and SD. Infrastructure and workflows used to generate data used in this study were developed by AD, DK, SL, SD, and GC.  All authors reviewed and commented on the manuscript, which was written by GC, JB, and TW.
