@@ -134,13 +134,14 @@ Furthermore, re-analyses of these three semantically-themed
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
 % Fri May 17 14:28:31 2019
 \begin{table}[ht]
-\caption{Summary of base WoS Analytical Dataset.The number of publications of type Article (UP), unique references (UR), total references (TR) and the ratio of total references to unique references increases monotonically with each year indicating that both the number of documents and citation activity increase over time. Only publications of type Article with at least two references, and references with complete publication data were included.} 
+\caption{Summary of base WoS Analytical Dataset.
+The number of unique publications of type Article, unique references (UR), total references (TR), and the ratio of total references to unique references increases monotonically with each year indicating that both the number of documents and citation activity increase over time. Only publications of type Article with at least two references and references with complete publication data were included.} 
 \label{tab:summary_data}
 \centering
 \scalebox{0.7}{
-\begin{tabular}{|r rrrr|}
+\begin{tabular}{|r  cccc |}
   \hline
-year & UP & UR & TR & TR/UR \\ 
+year & Unique Publications & Unique References (UR) & Total References (TR) & TR/UR \\ 
   \hline
 1985 & 391,860 & 2,266,584 & 5,588,861 & 2.47 \\ 
   \hline
@@ -193,7 +194,7 @@ Year & Immunology & Metabolism & Applied Physics \\
 \emph{Monte Carlo simulations, normalization of observed frequencies, annotations, and `hit' papers}. Analysis was performed on publications from 1985, 1995, and 2005. Building upon prior work~\citep{uzzi_atypical_2013}, all ${n \choose 2}$ reference pairs were generated for each publication, where $n$ is the number of cited references in the publication. These reference pairs were then mapped to the journals they were published in using ISSN numbers as identifiers. Where multiple ISSN numbers exist for a journal, the most frequently used one in the WoS was assigned to the journal. In addition, publications containing fewer than two references were discarded. Journal pair frequencies were summed across the dataset to create observed frequencies $(F_{obs})$. 
 
 For citation shuffling, we developed a performant citation switching algorithm, \emph{runtime enhanced permuting citation switcher (repcs)}, that randomly permuted citations grouped by year of publication to switch citations while preserving the year of publication for both articles and references, the number of publications and the number of references in each dataset and the disciplinary composition of the references in each dataset. In implementing this approach, our approach differs from the approach in \cite{uzzi_atypical_2013}, in the following ways (i) we sampled citations proportional to their citation frequency (equivalently, from a multiset rather than a set) in order to better reflect citation practice,  (ii) we permitted a substitution to match the original reference in a publication when the random selection process dictated it rather than attempting to enforce that a different reference be substituted, and (iii) we introduced an error correction step to delete any publications that accumulated duplicate references during the substitution process. 
-As a benchmark, we used the citation switching algorithm of ~\cite{uzzi_atypical_2013}, henceforth referred to  as \emph{umsj} (as also done in ~\citep{boyack_vs_uzzi_2014}), using code kindly provided by the authors. A single comparative analysis showed that while 10 simulations of the WoS 1985 dataset (391,860 publications) completed in 2,186 hours using the \emph{umsj} algorithm, it completed in less than one hour using the our implementation of the \emph{repcs}   algorithm on a Spark  cluster. We also tested \emph{repcs}  under comparable conditions to \emph{umsj} and estimated a runtime advantage of at least two orders of magnitude. Using either the \emph{repcs}   or \emph{umsj} algorithms for 10 simulations resulted in expected value coverage of 75\% of the observed journal pair frequencies. Subsequent rounds of development and testing resulted in 99\% coverage of observed journal pairs when 1,000 simulations were conducted. The runtime advantage was significant enough that we chose to use the \emph{repcs}   algorithm in our study  and generated expected values averaged from 1,000 simulations for improved coverage of every dataset we analyzed. 
+As a benchmark, we used the citation switching algorithm of ~\cite{uzzi_atypical_2013}, henceforth referred to  as \emph{umsj} (as also done in ~\cite{boyack_vs_uzzi_2014}), using code kindly provided by the authors. A single comparative analysis showed that while 10 simulations of the WoS 1985 dataset (391,860 publications) completed in 2,186 hours using the \emph{umsj} algorithm, it completed in less than one hour using the our implementation of the \emph{repcs}   algorithm on a Spark  cluster. We also tested \emph{repcs}  under comparable conditions to \emph{umsj} and estimated a runtime advantage of at least two orders of magnitude. Using either the \emph{repcs}   or \emph{umsj} algorithms for 10 simulations resulted in expected value coverage of 75\% of the observed journal pair frequencies. Subsequent rounds of development and testing resulted in 99\% coverage of observed journal pairs when 1,000 simulations were conducted. The runtime advantage was significant enough that we chose to use the \emph{repcs}   algorithm in our study  and generated expected values averaged from 1,000 simulations for improved coverage of every dataset we analyzed. 
 
 Averaging the result of 1,000 simulations for each dataset studied, z-scores were then calculated for each journal-pair using the formula $(F_{obs} - F_{exp})/\sigma$ where $F_{obs}$ is the observed frequency, $F_{exp}$ is the averaged simulated frequency, and $\sigma$ is the standard deviation of the simulated frequencies for a journal pair. As a result of these calculations, each publication becomes associated with a set of z-scores corresponding to the journal pairs derived from pairwise combinations of its cited references. Positional statistics of z-scores were calculated for each publication, which was then labeled according to conventionality and novelty: (i) HC if the median z-score exceeded the median of median z-scores for all publications and LC if the median z-score was equal to or less than the median of median z-scores for all publications, and (ii) HN if the tenth percentile of z-scores for a publication was less than zero, and LN if the tenth percentile of z-scores for a publication was greater than zero.  
 
@@ -223,11 +224,13 @@ Similarly,  the metabolism dataset  contained one reference labeled Philosophy, 
 The data show convincingly that the disciplinary composition of references in a network is preserved when citation shuffling is constrained to the subnetwork, but is significantly distorted when the WoS superset is used as a source of substitution. A second inference is that the choice between these two algorithms is not relevant (except for running time considerations), and that the background network used for the shuffle is critical.
 
 \begin{table}[ht]
-\caption{Measuring Model Misspecification. For the set of journal pairs in common between a disciplinary network and the full WoS dataset, Kullback-Leibler (K-L) divergences
-between empirical and simulated journal pair frequencies were computed for the years 1985, 1995, and 2005 for the three disciplinary datasets (applied\_physics, immunology, and metabolism) using either the disciplinary network as background or the WoS superset (all\_wos) to generate the null model (Background). K-L divergence was calculated using the R seewave package \citep{seewave2008} with a base (logarithm) of 2. }
+\caption{Model misspecification is reduced by constraining substitutions to disciplinary subnetworks. For the set of journal pairs in common between a disciplinary network and the full WoS dataset, Kullback-Leibler (K-L) divergences
+between empirical and simulated journal pair frequencies were computed for the years 1985, 1995, and 2005 for the three disciplinary datasets (applied\_physics, immunology, and metabolism) using either the disciplinary network as background or the WoS superset (all\_wos) to generate the null model (Background). K-L divergence was calculated using the R seewave package \citep{seewave2008} with a base (logarithm) of 2. 
+The reduction in K-L divergence between simulated and observed data  shows that model misspecification is reduced by  restricting the reference substitutions to the disciplinary subnetwork (our model), as compared to treating all substitutions within WoS as equiprobable (the Uzzi et al. model).
+}
 \label{tab:kld}
 \centering
-\begin{tabular}{ccccccc} 
+\begin{tabular}{| ccccc |} 
   \hline
  Disciplinary Network & Year & Background & K-L Divergence & Ratio \\ 
   \hline
@@ -279,9 +282,10 @@ Figure \ref{fig:Fig2}, Panels (a) and (b), compares hit rates for the four categ
 \begin{table}%[tbhp]
 \centering
 \caption[Hit Rates]{Hit Rates by Category for the 1995 datasets. The last four columns indicate the proportion of publications that are hits for each respective category.} \label{Tab:HitRate}
-\begin{tabular}{crrrrrrr}
-& \multicolumn{1}{c}{Hits as \%} & \multicolumn{1}{c}{Novelty}  &  &  &  &  \\ Data Set & \multicolumn{1}{c}{of Articles} & \multicolumn{1}{c}{Percentile} & \multicolumn{1}{c}{LNLC} & \multicolumn{1}{c}{LNHC} & \multicolumn{1}{c}{HNLC} & \multicolumn{1}{c}{HNHC} \\ \hline
-   
+\begin{tabular}{|crrrrrr|}
+\hline
+& \multicolumn{1}{c}{Hits as \%} & \multicolumn{1}{c}{Novelty}  &  &  &  &  \\ Data Set & \multicolumn{1}{c}{of Articles} & \multicolumn{1}{c}{Percentile} & \multicolumn{1}{c}{LNLC} & \multicolumn{1}{c}{LNHC} & \multicolumn{1}{c}{HNLC} & \multicolumn{1}{c}{HNHC} \\ 
+\hline  
 Imm95&1\%&10\%& 0.000& 0.019& 0.005& 0.014 \\ 
 Imm95&10\%&10\%& 0.017& 0.128& 0.076& 0.129 \\ 
 Metab95&1\%&10\%& 0.001& 0.017& 0.006& 0.014 \\ 
