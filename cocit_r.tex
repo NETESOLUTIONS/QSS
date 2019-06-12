@@ -286,7 +286,14 @@ These results clearly demonstrate that the modification to the Uzzi {\em et al.}
 \includegraphics[width=1.5in]{Fig2H01N10.pdf} & \includegraphics[width=1.5in]{Fig2H10N10.pdf} \\
 (a) Top 1\% of cited articles & (b) Top 10\% of cited articles \\
 \end{tabular}
-\caption{Effect of Context on Journal-Pair z-scores and Categorical Hit Rates: Immunology, Applied Physics, and WoS for 1995. Panels (a) and (b) show hit rates for the LNLC, LNHC, HNLC, and HNHC categories for the immunology, applied physics, and WoS datasets when hit articles are defined as the top 1\% and top 10\% of articles, respectively.  Novelty in both panels is defined at the 10th percentile of articles' z-score distributions. The number of data points in the immunology, applied physics, and WoS data sets are 21,917, 18,305, and 476,288, respectively.  The results for the WoS data set mirrored previous results from \cite{uzzi_atypical_2013}, where the highest hit rate was for the HNHC category.  The highest hit rates for the immunology dataset, in contrast, are in the LNHC category. The LNHC category often had the highest hit rate for the immunology dataset for various parameter settings with the HCHN category having the highest hit rate in other cases: metabolism results are similar. The applied physics dataset shows further contrast as the hit rate for it was highest in the HNLC category.  The HNLC category demonstrated the highest hit rate often for applied physics: otherwise the highest hit rate was for HNHC articles.}
+\caption{Effect of using the improved model on  categorical hit rates for Immunology, Applied Physics, and WoS for 1995. Panels (a) and (b) show hit rates for the LNLC, LNHC, HNLC, and HNHC categories for the applied physics, immunology, metabolism, and WoS datasets when hit articles are defined as the top 1\% and top 10\% of articles, respectively.  Novelty in both panels is defined at the 10th percentile of articles' z-score distributions. 
+The results for the WoS data set mirror  results from \cite{uzzi_atypical_2013}, where the highest hit rate was for the HNHC category.  Results for the three disciplinary subnetworks all differ from the overall WoS results: the highest hit rates for the immunology and metabolism datasets  are in the LNHC category and
+%The LNHC category often had the highest hit rate for the immunology dataset for various parameter settings with the HCHN category having the highest hit rate in other cases: metabolism results are similar. 
+the highest hit rate for the applied physics datasets are in the HNLC category.  
+%The HNLC category demonstrated the highest hit rate often for applied physics: otherwise the highest hit rate was for HNHC articles.
+\textcolor{blue}{Need numbers for metabolism for the next sentence:}
+The number of data points in the immunology, applied physics, and WoS data sets are 21,917, 18,305, and 476,288, respectively.  
+}
 \label{fig:Fig2}
 \end{figure*}
 
@@ -294,17 +301,19 @@ Since the constrained model better fits the observed data, we evaluated the dist
 highly cited articles  (i.e., ``hit articles")
  into the four categories (HCHN, LCHN, HCLN, LCLN), for different
 thresholds for hit articles.
-Figure \ref{fig:Fig2}, Panels (a) and (b), compares hit rates for the four categories among the Immunology, Applied Physics, and WoS datasets for 1995, where the hit rate is defined as the number of hit articles in each category divided by the number of articles in the category. 
+Figure \ref{fig:Fig2}, Panels (a) and (b), compares hit rates for the four categories among the Immunology, Metabolism, Applied Physics, and WoS datasets for 1995, where the hit rate is defined as the number of hit articles in each category divided by the number of articles in the category. 
 The calculation for the hit rates for the WoS dataset (bottom row, Figure \ref{fig:Fig2})
 mirrors Uzzi et al.'s results, whereby the largest hit rates were for the HNHC category, despite our methodological improvement of sampling citations in proportion to their frequency. 
-However, results observed for the 1995 immunology and metabolism datasets show different
-trends, in that  articles in the LNHC category had the greatest hit rates for the top 1\% of cited articles and tied for the top 10\%.
+However, the trends  for all three  disciplinary subnetworks  are different from those for WoS.
+Specifically, the highest hit rates for the 1995 immunology and metabolism datasets are in the LNHC category for the top 1\% of cited articles (and tied between LNHC and HNHC for the top 10\%),
+and the highest hit rates for the 1995 applied physics datasets are in the 
+HNLC category for both the top 1\% and top 10\% of all cited articles.  
 %Across all years and parameter settings, the highest hit rates in the immunology datasets were sometimes in the LNHC category and sometimes in the HNHC category, and the hit rates for the metabolism datasets reflected this same pattern  (Figure \ref{fig:Fig2}). 
-On the other hand, the greatest hit rates for the applied physics data were   in the HNLC category for both the top 1\% and top 10\% of all cited articles.  
-Thus, the category exhibiting the highest hit rate (among highly cited papers) depends on the
-specific disciplinary network, and also to some extent on the threshold for being highly cited.
+ Thus, the category exhibiting the highest hit rate (among highly cited papers) depends on the
+specific disciplinary network and to some extent on the threshold for being highly cited.
  %was the case with immunology. 
-Furthermore, the categories displaying the greatest hit rate vary to some extent % with parameter settings and 
+Furthermore, the categories displaying the greatest hit rate vary 
+to some extent % with parameter settings and 
 with the year  \textcolor{blue}{(data not shown)}.
 %The lack of stable results across parameter settings suggests that parameters must be selected judiciously.
 
