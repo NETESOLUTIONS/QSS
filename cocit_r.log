@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  13 JUN 2019 07:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  13 JUN 2019 08:33
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -1047,12 +1047,6 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 197.
 
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.5> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 199.
-
-Package natbib Warning: Citation `GithubERNIE2019' on page 4 undefined on input
- line 199.
-
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1089,20 +1083,11 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5]
-<background-effect.pdf, id=148, 505.89pt x 505.89pt>
+<background-effect.pdf, id=152, 505.89pt x 505.89pt>
 File: background-effect.pdf Graphic file (type pdf)
 <use background-effect.pdf>
 Package pdftex.def Info: background-effect.pdf  used on input line 218.
 (pdftex.def)             Requested size: 227.6528pt x 227.6561pt.
-
-
-Package natbib Warning: Citation `seewave2008' on page 6 undefined on input lin
-e 230.
-
-
-Package natbib Warning: Citation `seewave2008' on page 6 undefined on input lin
-e 230.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1133,12 +1118,12 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.264 
        <./background-effect.pdf>]
-<Fig2H01N10.pdf, id=173, 334.08414pt x 989.98158pt>
+<Fig2H01N10.pdf, id=181, 334.08414pt x 989.98158pt>
 File: Fig2H01N10.pdf Graphic file (type pdf)
 <use Fig2H01N10.pdf>
 Package pdftex.def Info: Fig2H01N10.pdf  used on input line 269.
 (pdftex.def)             Requested size: 108.405pt x 321.22661pt.
-<Fig2H10N10.pdf, id=174, 334.1042pt x 997.2497pt>
+<Fig2H10N10.pdf, id=182, 334.1042pt x 997.2497pt>
 File: Fig2H10N10.pdf Graphic file (type pdf)
 <use Fig2H10N10.pdf>
 Package pdftex.def Info: Fig2H10N10.pdf  used on input line 269.
@@ -1193,11 +1178,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [10]
-
-Package natbib Warning: Citation `GithubERNIE2019' on page 11 undefined on inpu
-t line 328.
-
-(cocit_r.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1210,36 +1190,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
   []
  []
 
-[11]
+[11] (cocit_r.bbl
 \bibindentwidth=\dimen183
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 236.
+
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Underfull \hbox (badness 7256) in paragraph at lines 80--98
- \OT1/pcr/m/n/9 .1126 / science [] .149 [] .3683 [] .510$[][][][]   \OT1/ppl/m/
-n/9 doi: [][]10.1126/sci- 
- []
-
-
-Overfull \hbox (37.15059pt too wide) in paragraph at lines 170--190
- \OT1/ppl/m/it/9 bioRxiv\OT1/ppl/m/n/9 .  (https://www.biorxiv.org/content/earl
-y/2018/07/19/371955) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 539--561
- \OT1/ppl/m/n/9 05-16, from [][][][]$\OT1/pcr/m/n/9 https :// journals [] .plos
- [] .org / plosone / 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 572--592
- \OT1/pcr/m/n/9 www [] .frontiersin [] .org / article / 10 [] .3389 / frma [] .
-2018 [] 
- []
-
-)
+))
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
  []
@@ -1250,7 +1207,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [12]
-<pnas_fig1a.pdf, id=400, 505.89pt x 505.89pt>
+<pnas_fig1a.pdf, id=362, 505.89pt x 505.89pt>
 File: pnas_fig1a.pdf Graphic file (type pdf)
 <use pnas_fig1a.pdf>
 Package pdftex.def Info: pnas_fig1a.pdf  used on input line 342.
@@ -1285,16 +1242,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
                                                   \fi \fi 
 l.358 
        <./pnas_fig1a.pdf>]
-<fig2_scatter_z_scores_flattened.pdf, id=423, 433.62pt x 433.62pt>
+<fig2_scatter_z_scores_flattened.pdf, id=386, 433.62pt x 433.62pt>
 File: fig2_scatter_z_scores_flattened.pdf Graphic file (type pdf)
 <use fig2_scatter_z_scores_flattened.pdf>
 Package pdftex.def Info: fig2_scatter_z_scores_flattened.pdf  used on input lin
 e 362.
 (pdftex.def)             Requested size: 216.81pt x 216.80946pt.
-
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
@@ -1343,13 +1296,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 19138 strings out of 492973
- 328030 string characters out of 3135929
- 447800 words of memory out of 3000000
- 22739 multiletter control sequences out of 15000+200000
- 579993 words of font info for 128 fonts, out of 3000000 for 9000
+ 19146 strings out of 492973
+ 328193 string characters out of 3135929
+ 438390 words of memory out of 3000000
+ 22745 multiletter control sequences out of 15000+200000
+ 579613 words of font info for 127 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 47i,20n,65p,1782b,508s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,20n,65p,1782b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1361,9 +1314,9 @@ KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on cocit_r.pdf (16 pages, 1049122 bytes).
+Output written on cocit_r.pdf (16 pages, 1036063 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
