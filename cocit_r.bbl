@@ -29,10 +29,6 @@ Boyack, K.%
 \APACjournalVolNumPages{Journal of the American Society for Information Science
   and Technology}{61}{12}{2389--2404}.
 \newblock
-\begin{APACrefURL}
-  [{2019-01-05}]\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/asi.21419}
-  \end{APACrefURL}
-\newblock
 \begin{APACrefDOI} \doi{10.1002/asi.21419} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
@@ -89,10 +85,6 @@ de Solla~Price, D\BPBI J.%
 \newblock
 \APACjournalVolNumPages{Science}{149}{3683}{510--515}.
 \newblock
-\begin{APACrefURL}
-  [{2019-02-03}]\url{http://www.sciencemag.org/cgi/doi/10.1126/science.149.3683.510}
-  \end{APACrefURL}
-\newblock
 \begin{APACrefDOI} \doi{10.1126/science.149.3683.510} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
@@ -119,10 +111,6 @@ Garfield, E.%
   {Ideas}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Science}{122}{3159}{108--111}.
-\newblock
-\begin{APACrefURL}
-  [{2019-05-16}]\url{https://science.sciencemag.org/content/122/3159/108}
-  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1126/science.122.3159.108} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -183,8 +171,6 @@ Keserci, S.%
 \newblock
 \APACjournalVolNumPages{bioRxiv}{}{}{}.
 \newblock
-\APACrefnote{https://www.biorxiv.org/content/early/2018/07/19/371955}
-\newblock
 \begin{APACrefDOI} \doi{10.1101/371955} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
@@ -213,11 +199,42 @@ Klavans, R.%
 \newblock
 \APACjournalVolNumPages{Journal of Informetrics}{11}{4}{1158--1174}.
 \newblock
-\begin{APACrefURL}
-  [{2019-05-16}]\url{http://www.sciencedirect.com/science/article/pii/S1751157717302110}
-  \end{APACrefURL}
-\newblock
 \begin{APACrefDOI} \doi{10.1016/j.joi.2017.10.002} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Korobskiy%
+, Davey%
+, Liu%
+, Devarakonda%
+\BCBL {}\ \BBA {} Chacko%
+}{%
+Korobskiy%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+GithubERNIE2019}
+\APACinsertmetastar {%
+GithubERNIE2019}%
+\begin{APACrefauthors}%
+Korobskiy, D.%
+, Davey, A.%
+, Liu, S.%
+, Devarakonda, S.%
+\BCBL {}\ \BBA {} Chacko, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {{Enhanced Research Network Informatics Environment (ERNIE)}}
+  {{Enhanced Research Network Informatics Environment (ERNIE)}}\ \APACbVolEdTR
+  {}{Github Repository}.
+\newblock
+\APACaddressInstitution{}{NET ESolutions Corporation}.
+\newblock
+\begin{APACrefURL} \url{https://github.com/NETESOLUTIONS/ERNIE}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -245,10 +262,6 @@ Kullback, S.%
 \newblock
 \APACjournalVolNumPages{The Annals of Mathematical Statistics}{22}{1}{79--86}.
 \newblock
-\begin{APACrefURL}
-  [{2019-05-22}]\url{https://projecteuclid.org/euclid.aoms/1177729694}
-  \end{APACrefURL}
-\newblock
 \begin{APACrefDOI} \doi{10.1214/aoms/1177729694} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
@@ -273,10 +286,6 @@ Marshakova-Shaikevich, I.%
   {System of document connections based on references}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Nauch-Techn.Inform, Ser.2}{6}{4}{3-8}.
-\newblock
-\begin{APACrefURL}
-  [{2019-02-03}]\url{http://doi.wiley.com/10.1002/asi.4630240406}
-  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1002/asi.4630240406} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -327,9 +336,6 @@ Newman, M\BPBI E\BPBI J.%
 \newblock
 \APACjournalVolNumPages{Proceedings of the National Academy of
   Sciences}{98}{2}{404--409}.
-\newblock
-\begin{APACrefURL} [{2019-03-22}]\url{https://www.pnas.org/content/98/2/404}
-  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1073/pnas.98.2.404} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -384,9 +390,6 @@ Perline, R.%
   {Strong, {Weak} and {False} {Inverse} {Power} {Laws}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Statistical Science}{20}{1}{68--88}.
-\newblock
-\begin{APACrefURL} [{2019-05-22}]\url{https://www.jstor.org/stable/20061161}
-  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -418,9 +421,6 @@ Shi, X.%
 \newblock
 \APACaddressPublisher{New York, NY, USA}{ACM}.
 \newblock
-\begin{APACrefURL} \url{http://doi.acm.org/10.1145/1816123.1816131}
-  \end{APACrefURL}
-\newblock
 \begin{APACrefDOI} \doi{10.1145/1816123.1816131} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
@@ -448,10 +448,6 @@ Small, H.%
 \newblock
 \APACjournalVolNumPages{Journal of the American Society for Information
   Science}{24}{4}{265--269}.
-\newblock
-\begin{APACrefURL}
-  [{2019-02-03}]\url{http://doi.wiley.com/10.1002/asi.4630240406}
-  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1002/asi.4630240406} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -486,11 +482,35 @@ Stringer, M\BPBI J.%
 \APACjournalVolNumPages{Journal of the American Society for Information Science
   and Technology}{61}{7}{1377--1385}.
 \newblock
-\begin{APACrefURL}
-  [{2019-05-22}]\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158611/}
-  \end{APACrefURL}
-\newblock
 \begin{APACrefDOI} \doi{10.1002/asi.21335} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sueur%
+, Aubin%
+\BCBL {}\ \BBA {} Simonis%
+}{%
+Sueur%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+seewave2008}
+\APACinsertmetastar {%
+seewave2008}%
+\begin{APACrefauthors}%
+Sueur, J.%
+, Aubin, T.%
+\BCBL {}\ \BBA {} Simonis, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Seewave: a free modular tool for sound analysis and
+  synthesis} {Seewave: a free modular tool for sound analysis and
+  synthesis}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioacoustics}{18}{}{213-226}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -552,10 +572,6 @@ Wallace, M\BPBI L.%
 \newblock
 \APACjournalVolNumPages{{PLOS One}}{7}{}{e33339}.
 \newblock
-\begin{APACrefURL}
-  [{2019-05-16}]\url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0033339}
-  \end{APACrefURL}
-\newblock
 \begin{APACrefDOI} \doi{10.1371/journal.pone.0033339} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
@@ -576,16 +592,12 @@ Zuckerman, H.%
 \newblock
 \APACrefYearMonthDay{2018}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {The Sociology of Science and the Garfield Effect: Happy
-  Accidents, Unanticipated Developments and Unexploited Potentials} {The
-  sociology of science and the garfield effect: Happy accidents, unanticipated
-  developments and unexploited potentials}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{The Sociology of Science and the Garfield Effect: Happy
+  Accidents, Unanticipated Developments and Unexploited Potentials}} {{The
+  Sociology of Science and the Garfield Effect: Happy Accidents, Unanticipated
+  Developments and Unexploited Potentials}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Frontiers in Research Metrics and Analytics}{3}{}{20}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.frontiersin.org/article/10.3389/frma.2018.00020}
-  \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.3389/frma.2018.00020} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
