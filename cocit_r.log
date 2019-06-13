@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  13 JUN 2019 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  13 JUN 2019 12:46
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -1029,7 +1029,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2744) has occurred while \output is active []
 
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
@@ -1048,6 +1048,9 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                 on input line 197.
 
 
+Underfull \vbox (badness 2103) has occurred while \output is active []
+
+
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
  []
@@ -1062,14 +1065,16 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.2
-}) has been already used, duplicate ignored
+l.199 F
+       or citation shuffling, we developed a performant citation switching a...
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 
-      ]
+l.199 F
+       or citation shuffling, we developed a performant citation switching a...
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1083,7 +1088,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5]
-<background-effect.pdf, id=152, 505.89pt x 505.89pt>
+<background-effect.pdf, id=151, 505.89pt x 505.89pt>
 File: background-effect.pdf Graphic file (type pdf)
 <use background-effect.pdf>
 Package pdftex.def Info: background-effect.pdf  used on input line 218.
@@ -1118,12 +1123,12 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.264 
        <./background-effect.pdf>]
-<Fig2H01N10.pdf, id=181, 334.08414pt x 989.98158pt>
+<Fig2H01N10.pdf, id=179, 334.08414pt x 989.98158pt>
 File: Fig2H01N10.pdf Graphic file (type pdf)
 <use Fig2H01N10.pdf>
 Package pdftex.def Info: Fig2H01N10.pdf  used on input line 269.
 (pdftex.def)             Requested size: 108.405pt x 321.22661pt.
-<Fig2H10N10.pdf, id=182, 334.1042pt x 997.2497pt>
+<Fig2H10N10.pdf, id=180, 334.1042pt x 997.2497pt>
 File: Fig2H10N10.pdf Graphic file (type pdf)
 <use Fig2H10N10.pdf>
 Package pdftex.def Info: Fig2H10N10.pdf  used on input line 269.
@@ -1196,7 +1201,10 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 236.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-))
+)
+Overfull \vbox (9.70502pt too high) has occurred while \output is active []
+
+
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
  []
@@ -1206,7 +1214,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
   []
  []
 
-[12]
+[12])
 <pnas_fig1a.pdf, id=364, 505.89pt x 505.89pt>
 File: pnas_fig1a.pdf Graphic file (type pdf)
 <use pnas_fig1a.pdf>
@@ -1295,11 +1303,11 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  19146 strings out of 492973
  328193 string characters out of 3135929
- 439399 words of memory out of 3000000
+ 444399 words of memory out of 3000000
  22745 multiletter control sequences out of 15000+200000
  579613 words of font info for 127 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 47i,20n,65p,1782b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,20n,65p,1909b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1311,7 +1319,7 @@ KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on cocit_r.pdf (16 pages, 1036680 bytes).
+Output written on cocit_r.pdf (16 pages, 1036874 bytes).
 PDF statistics:
  457 PDF objects out of 1000 (max. 8388607)
  50 named destinations out of 1000 (max. 500000)
