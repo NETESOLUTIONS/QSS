@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  13 JUN 2019 08:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  13 JUN 2019 08:37
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -1291,14 +1291,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 408.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  19146 strings out of 492973
  328193 string characters out of 3135929
- 438390 words of memory out of 3000000
+ 438399 words of memory out of 3000000
  22745 multiletter control sequences out of 15000+200000
  579613 words of font info for 127 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -1314,7 +1311,7 @@ KTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on cocit_r.pdf (16 pages, 1036063 bytes).
+Output written on cocit_r.pdf (16 pages, 1036087 bytes).
 PDF statistics:
  455 PDF objects out of 1000 (max. 8388607)
  50 named destinations out of 1000 (max. 500000)
