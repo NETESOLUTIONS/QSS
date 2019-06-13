@@ -107,32 +107,18 @@ Citation analysis of the scientific literature has been used to study and define
 
 Citation and network analysis of  scientific literature reveals information on semantic relationships between publications, collaboration between scientists, and the practice of citation itself~\citep{garfield_citation_1955,de_solla_price_networks_1965,newman_structure_2001,Shi:2010:CHI:1816123.1816131,patience_pmid28560354}. Co-citation, the frequency with which two documents are cited together in other documents provides additional insights, including the identification of semantically related documents, fields, specializations, and new ideas in science~\citep{small_co-citation_1973, marshakova-shaikevich_co-citation_1973,boyack_co-citation_2010, 10.3389/frma.2018.00020}. 
 
-\cite{uzzi_atypical_2013} used a novel approach for co-citation analysis to characterize a subset of highly cited articles with respect to both novel and conventional combinations of prior research. The frequency with which references were co-cited  in 17.9 million articles and their cited references from the Web of Science (WoS) was calculated and expressed as journal pair frequencies (observed co-citation frequencies). Expected co-citation values were generated from Monte Carlo simulations under a random graph model. Observed frequencies were then normalized (shifted and scaled) to averaged expected values from ten simulations and termed as \emph{z-scores}. Consequently, every article was associated with multiple z-scores corresponding to co-cited journal pairs in its references. For each article, positional statistics of z-scores were calculated to set thresholds for a binary classification of conventionality using the median z-score of an article and novelty using the tenth percentile of z-scores within an article. 
-%\textcolor{blue}{Note that Uzzi et al. reported on the 10th percentile in the paper, but investigated many other definitions of novelty in the supplemental paper.  Should this be noted? Perhaps not for sake of brevity and we are citing just the main paper here.} 
-Thus, HCLN would denote high conventionality (HC) and low novelty (LN), with all four combinations being possible. The authors observed that HCHN articles were twice as likely to be highly cited \textcolor{blue}{compared to the background rate}, suggesting that novel combinations of ideas flavoring a body of conventional thought were a feature of impact and that `science follows a nearly universal pattern.' 
-%\textcolor{blue}{Should we be more precise here in using 'twice?'  Uzzi et al. say twice the background rate whereas this might be construed as twice the rate of other categories which is a much different thing.}
+\cite{uzzi_atypical_2013} used a novel approach for co-citation analysis to characterize a subset of highly cited articles with respect to both novel and conventional combinations of prior research. The frequency with which references were co-cited  in 17.9 million articles and their cited references from the Web of Science (WoS) was calculated and expressed as journal pair frequencies (observed co-citation frequencies). Expected co-citation values were generated from randomized networks using Monte Carlo simulations under a random graph model. Observed frequencies were then normalized (shifted and scaled) to averaged expected values from ten randomized networks and termed as \emph{z-scores}. Consequently, every article was associated with multiple z-scores corresponding to co-cited journal pairs in its references. For each article, positional statistics of z-scores were calculated and evaluated to set thresholds for a binary classification of conventionality using the median z-score of an article and novelty using the tenth percentile of z-scores within an article.
 
-Key to Uzzi {\em et al.}, is their random graph model and its underlying assumptions. The citation switching algorithm used to generate expected values from random substitutions is designed to preserve the number of publications, the number of references in each publication, and the year of publication of both publications and references. However, a critically important feature of the model is that all references published in the same year have equal probability of being cited by any given publication.
-Thus, in particular,  subject matter and  citation count do not impact the probability that the reference will be cited, so that  a reference in quantum physics can be substituted, with equal probability, by a reference in quantum physics, quantum chemistry, classical literature, entomology, or anthropology. Such substitutions poorly model the disciplinary nature of scientific endeavor and citation behavior~\citep{wallace_lariviere_gingras_2012,moed_measuring_2010,klavans_research_2017,garfield_1979}. In addition, under this random model, a reference cited over 100 times in a given year is selected with the same probability as a reference cited only once, which appears inconsistent with the power law or lognormal citation distributions described in the literature~\citep{stringer_statistical_2010,perline_strong_2005}.  Accordingly, model misspecification is likely to arise on account of the simulated values not modeling the empirical data very well. 
+Thus, HCLN would denote high conventionality (HC) and low novelty (LN), with all four combinations being possible. The authors observed that HCHN articles were twice as likely to be highly cited compared to the background rate, suggesting that novel combinations of ideas flavoring a body of conventional thought were a feature of impact. 
 
-A follow-up study by \cite{boyack_vs_uzzi_2014} explored the impact of discipline and journal effects on these definition of conventionality and novelty.  While their study had some methodological differences in the use of Scopus data rather than WoS data, a smaller dataset, and a $\chi^2$ calculation rather than Monte Carlo simulations to generate expected values of journal pairs, Boyack and Klavans noted strong effects from both disciplines and journals that were not reported by Uzzi et al. While they reported the trend that HCHN is more probable in highly cited papers, they observed that ``only 64.4\%  of  243  WoS  subject  categories'' in the Uzzi {\em et al.} study met the criterion of having the highest probability of hit papers in the HCHN category.  Further, they observed that journals vary widely in terms of size and influence and that 20 journals accounted for nearly 15\% of co-citations in their measurements. Lastly, they noted that three multidisciplinary journals accounted for 9.4\% of all atypical combinations. 
+Key to Uzzi {\em et al.}, is their random graph model and its underlying assumptions. The citation switching algorithm used to generate expected values by random substitutions of references is designed to preserve the number of publications, the number of references in each publication, and the year of publication of both publications and references. Importantly, disciplinary origin does not affect the probability that a reference is selected to replace another one. For example, a reference in quantum physics can be substituted, with equal probability, by a reference in quantum physics, quantum chemistry, classical literature, entomology, or anthropology. Such substitutions poorly model the disciplinary nature of scientific endeavor and citation behavior~\citep{wallace_lariviere_gingras_2012,moed_measuring_2010,klavans_research_2017,garfield_1979}. In addition, under this random model, a reference cited many times in a given year is selected with the same probability as a reference cited only once, which appears inconsistent with the power law or lognormal citation distributions described in the literature~\citep{stringer_statistical_2010,perline_strong_2005}.  Accordingly, model misspecification is likely to arise on account of the simulated values not modeling the empirical data very well. 
 
-Despite different methods used to generate expected values, both of these key preceding studies (\emph{vide supra}) measured co-citation frequencies across the scientific literature (the WoS superset) and normalized them without disciplinary constraints before subsequently analyzing disciplinary subsets.
-In other words, the concerns raised above about misspecification resulting from treating
-all references as equiprobable, independent of discipline, apply to \cite{boyack_vs_uzzi_2014} as well.
- We hypothesized that modifying the normalization to constrain references to be drawn only from the disciplinary citation subnetwork  \textcolor{blue}{(i.e., the ``local network")}  rather than all of WoS
- \textcolor{blue}{ (the ``global network") } would reduce model misspecification.  
- Consequently, we used keyword searches of the scientific literature to construct exemplar citation networks themed around academic disciplines: \emph{applied physics, immunology, and metabolism}. Within these disciplinary frameworks, we calculated observed and expected co-citation frequencies using a refined random graph model and an efficient Monte Carlo simulation algorithm. 
+A follow-up study by \cite{boyack_vs_uzzi_2014} explored the impact of discipline and journal effects on these definition of conventionality and novelty.  While their study had some methodological differences in the use of Scopus data rather than WoS data, a smaller dataset, and a $\chi^2$ calculation rather than Monte Carlo simulations to generate expected values of journal pairs, Boyack and Klavans noted strong effects from both disciplines and journals. While they also reported the trend that HCHN is more probable in highly cited papers, they observed that ``only 64.4\%  of  243  WoS  subject  categories'' in the Uzzi {\em et al.} study met the criterion of having the highest probability of hit papers in the HCHN category.  Further, they observed that journals vary widely in terms of size and influence and that 20 journals accounted for nearly 15\% of co-citations in their measurements. Lastly, they noted that three multidisciplinary journals accounted for 9.4\% of all atypical combinations. 
 
-Our analyses, using multiple techniques, provides substantial evidence that constraining the reference substitutions to the \textcolor{blue}{local network}  reduces model misspecification compared to 
-the \textcolor{blue}{unconstrained model} that \textcolor{blue}{uses the global network, WoS, and treats all substitutions within WoS as equiprobable.} 
-Furthermore, re-analyses of these three semantically-themed
- citation networks  under the improved model reveals strikingly different trends than
- when using all of WoS. 
- For example, while Uzzi {\em et al.}~claimed that highly cited articles are more likely to be both HC and HN than expected and that this trend held across all subdisciplines, we find that these trends vary with the subdiscipline so that no universal trends can be established. 
- Specifically, 
- HC remains highly correlated with highly cited articles in the immunology and metabolism datasets but not with applied physics, and HN is highly correlated with highly cited articles in applied physics but not with immunology and metabolism.  Thus, disciplinary networks are different from each other, and trends that hold for the full WoS network do not hold for even large subnetworks (such as metabolism). 
- Furthermore, we also found that the categories HC, HN, etc.,  demonstrating the highest percentage of highly cited articles are not robust with respect to varying thresholds for high citation counts or for highly novel citation patterns. Overall, our study, although limited to three disciplinary subnetworks, suggests that co-citation analysis that inadequately considers disciplinary differences, may not be very useful at detecting universal features of impactful publications.
+Despite different methods used to generate expected values, both of these key preceding studies measured co-citation frequencies across the scientific literature (the WoS or Scopus superset) and normalized them without disciplinary constraints before subsequently analyzing disciplinary subsets. We hypothesized instead that modifying the normalization to constrain substitution references to be drawn only from the citation network being studied (the ``local network") rather than all of WoS
+(the ``global network") would reduce model misspecification by limiting substitutions from disciplinarily ectopic references. Consequently, we used keyword searches of the scientific literature to construct exemplar citation networks themed around academic disciplines of interest: \emph{applied physics, immunology, and metabolism}. Within these disciplinary frameworks, we calculated observed and expected co-citation frequencies using a refined random graph model and an efficient Monte Carlo simulation algorithm.
+
+Our analyses, using multiple techniques, provides substantial evidence that a constrained model where reference substitutions are limited to a local (disciplinary) network reduces model misspecification compared to the unconstrained model that uses the global network (WoS). Furthermore, re-analyses of these three semantically-themed citation networks  under the improved model reveals strikingly different trends. For example, while Uzzi {\em et al.} reported that highly cited articles are more likely to be both HC and HN than expected and that this trend largely held across all disciplines, we find that these trends vary with the discipline and that universal trends are not apparent. Specifically,  HC remains highly correlated with highly cited articles in the immunology and metabolism datasets but not with applied physics, and HN is highly correlated with highly cited articles in applied physics but not with immunology and metabolism.  Thus, disciplinary networks are different from each other, and trends that hold for the full WoS network do not hold for even large subnetworks (such as metabolism).  Furthermore, we also found that the categories HC, HN, etc.,  demonstrating the highest percentage of highly cited articles are not robust with respect to varying thresholds for high citation counts or for highly novel citation patterns. Overall, our study, although limited to three disciplinary subnetworks, suggests that co-citation analysis that inadequately considers disciplinary differences, may not be very useful at detecting universal features of impactful publications.
 
 \section{Materials and Methods}
 
@@ -141,14 +127,13 @@ Furthermore, re-analyses of these three semantically-themed
 % latex table generated in R 3.5.3 by xtable 1.8-4 package
 % Fri May 17 14:28:31 2019
 \begin{table}[ht]
-\caption{Summary of base WoS Analytical Dataset.
-The number of unique publications of type Article, unique references (UR), total references (TR), and the ratio of total references to unique references increases monotonically with each year indicating that both the number of documents and citation activity increase over time. Only publications of type Article with at least two references and references with complete publication data were included.} 
+\caption{Summary of base WoS Analytical Dataset. Only publications of type Article with at least two references and references with complete publication data were selected for this data set. The number of unique publications of type Article, unique references (ur), total references (tr), and the ratio of total references to unique references increases monotonically with each year indicating that both the number of documents and citation activity increase over time. } 
 \label{tab:summary_data}
 \centering
 \scalebox{0.7}{
 \begin{tabular}{|r  cccc |}
   \hline
-year & Unique Publications & Unique References (UR) & Total References (TR) & TR/UR \\ 
+year & Unique Publications & Unique References (ur) & Total References (tr) & tr/ur \\ 
   \hline
 1985 & 391,860 & 2,266,584 & 5,588,861 & 2.47 \\ 
   \hline
@@ -181,7 +166,7 @@ year & Unique Publications & Unique References (UR) & Total References (TR) & TR
 \end{table}
 
 
-We constructed three disciplinary datasets in areas of our interest based on the keyword searches: immunology,   metabolism, and   applied physics. For the first two, rooted in biomedical research, we searched Pubmed for the term `immunology' or `metabolism' in the years 1985, 1995, and 2005~(Table \ref{tab:disc-datasets}). Pubmed IDs (pmids) returned were matched to WoS IDs (wos\_ids) and used to retrieve relevant articles. For the applied physics dataset, we directly searched traditional subject labels in WoS for `applied physics.' While applied physics and immunology represent somewhat small subnetworks (roughly 2-6\% of WoS), metabolism represents approximately 22\% of WoS, making them interesting and meaningful test cases. We also examined publications in the five major research areas in the Web of Science: life sciences \& biomedicine, physical sciences, technology, social sciences, and arts \& humanities,  using the extended subcategory classification of 153 sub-groups to categorize disciplinary composition of cited references in the datasets we studied.
+We constructed three disciplinary datasets in areas of our interest based on the keyword searches: immunology,   metabolism, and   applied physics. For the first two, rooted in biomedical research, we searched Pubmed for the term `immunology' or `metabolism' in the years 1985, 1995, and 2005~(Table \ref{tab:disc-datasets}). Pubmed IDs (pmids) returned were matched to WoS IDs (wos\_ids) and used to retrieve relevant articles. For the applied physics dataset, we directly searched traditional subject labels in WoS for `Physics, Applied' While applied physics and immunology represent somewhat small subnetworks (roughly 2-6\% of WoS), metabolism represents approximately 22\% of WoS, making them interesting and meaningful test cases. We also examined publications in the five major research areas in the Web of Science: life sciences \& biomedicine, physical sciences, technology, social sciences, and arts \& humanities,  using the extended subcategory classification of 153 sub-groups to categorize disciplinary composition of cited references in the datasets we studied.
 \vspace{-2 mm}
 \begin{table}[ht]
 \caption{Disciplinary Datasets. PubMed and WoS were searched for articles using search terms, `immunology', `metabolism', and `applied physics.' Counts of publications are shown for each of the three years analyzed and expressed in parentheses as a percentage of the total number of publications in our analytical WoS dataset (Table \ref{tab:summary_data}) for that year. Note that Applied Physics and Immunology each represent about 4\% of the publications in WoS, but Metabolism occupies nearly one-fourth of WoS.}
@@ -203,23 +188,19 @@ Year & Applied Physics & Immunology & Metabolism   \\
 
 We performed analyses on publications from 1985, 1995, and 2005. Building upon prior work~\citep{uzzi_atypical_2013}, all ${n \choose 2}$ reference pairs were generated for each publication, where $n$ is the number of cited references in the publication. These reference pairs were then mapped to the journals they were published in using ISSN numbers as identifiers. Where multiple ISSN numbers exist for a journal, the most frequently used one in the WoS was assigned to the journal. In addition, publications containing fewer than two references were discarded. Journal pair frequencies were summed across the dataset to create observed frequencies $(F_{obs})$. 
 
-For citation shuffling, we developed a performant citation switching algorithm, \emph{runtime enhanced permuting citation switcher (repcs)}~\citep{GithubERNIE2019}, that randomly permuted citations grouped by year of publication to switch citations while preserving the year of publication for both articles and references, the number of publications and the number of references in each dataset and the disciplinary composition of the references in each dataset. In implementing this approach, our approach differs from the approach in \cite{uzzi_atypical_2013}, in the following ways (i) we sampled citations proportional to their citation frequency (equivalently, from a multiset rather than a set) in order to better reflect citation practice,  (ii) we permitted a substitution to match the original reference in a publication when the random selection process dictated it rather than attempting to enforce that a different reference be substituted, and (iii) we introduced an error correction step to delete any publications that accumulated duplicate references during the substitution process. 
+For citation shuffling, we developed a performant citation switching algorithm, \emph{runtime enhanced permuting citation switcher (repcs)}~\citep{GithubERNIE2019}, that randomly permuted citations grouped by year of publication to switch citations while preserving the year of publication for both articles and references, the number of publications and the number of references in each dataset and the disciplinary composition of the references in each dataset. Our approach is different in the following ways (i) we sampled citations proportional to their citation frequency (equivalently from a multiset rather than a set) in order to better reflect citation practice (ii) we permitted a substitution to match the original reference in a publication when the random selection process dictated it rather than attempting to enforce that a different reference be substituted (iii) we introduced an error correction step to delete any publications that accumulated duplicate references during the substitution process. 
 As a benchmark, we used the citation switching algorithm of ~\cite{uzzi_atypical_2013}, henceforth referred to  as \emph{umsj} (as also done in ~\cite{boyack_vs_uzzi_2014}), using code kindly provided by the authors. A single comparative analysis showed that while 10 simulations of the WoS 1985 dataset (391,860 publications) completed in 2,186 hours using the \emph{umsj} algorithm, it completed in less than one hour using the our implementation of the \emph{repcs}   algorithm on a Spark  cluster. We also tested \emph{repcs}  under comparable conditions to \emph{umsj} and estimated a runtime advantage of at least two orders of magnitude. Using either the \emph{repcs}   or \emph{umsj} algorithms for 10 simulations resulted in expected value coverage of 75\% of the observed journal pair frequencies. Subsequent rounds of development and testing resulted in 99\% coverage of observed journal pairs when 1,000 simulations were conducted. The runtime advantage was significant enough that we chose to use the \emph{repcs}   algorithm in our study  and generated expected values averaged from 1,000 simulations for improved coverage of every dataset we analyzed. 
 
 Averaging the result of 1,000 simulations for each dataset studied, z-scores were then calculated for each journal-pair using the formula $(F_{obs} - F_{exp})/\sigma$ where $F_{obs}$ is the observed frequency, $F_{exp}$ is the averaged simulated frequency, and $\sigma$ is the standard deviation of the simulated frequencies for a journal pair. As a result of these calculations, each publication becomes associated with a set of z-scores corresponding to the journal pairs derived from pairwise combinations of its cited references. Positional statistics of z-scores were calculated for each publication, which was then labeled according to conventionality and novelty: (i) HC if the median z-score exceeded the median of median z-scores for all publications and LC if the median z-score was equal to or less than the median of median z-scores for all publications, and (ii) HN if the tenth percentile of z-scores for a publication was less than zero, and LN if the tenth percentile of z-scores for a publication was greater than zero.  
 
-To consider the relationship between citation impact, conventionality, and novelty we calculated percentiles for the number of accumulated citations in the first 8 years since publication for each article we studied and stratified. We also investigated multiple definitions of hit articles, with hits defined as the 1\%, 2\%, 5\%, and 10\% top-cited articles, and \textcolor{blue}{ 1st and 10th percentiles as thresholds for high novelty}. % \textcolor{blue}%{ Also, mention different thresholds, 1st and 10th, for novelty threshold.}
+To consider the relationship between citation impact, conventionality, and novelty we calculated percentiles for the number of accumulated citations in the first 8 years since publication for each article we studied and stratified. We also investigated multiple definitions of hit articles, with hits defined as the 1\%, 2\%, 5\%, and 10\% top-cited articles, and \textcolor{blue}{ 1st and 10th percentiles as thresholds for high novelty}. 
 
 \section{Results}
 
 \subsection{Model Misspecification and the Attributes of Disciplinary Context} 
-A source of misspecification in the global model arises from not accounting for disciplinary heterogeneity by treating all references  \textcolor{blue}{within WoS} as equiprobable substituents. Under this model, the probability of replacing a reference in one discipline by another reference in a second discipline is identical to the proportion of the articles in WoS that from the second discipline. 
-If the global model accurately reflects citation practice, the expected proportion of references within papers published in a given discipline $D$ would be equal to the proportion of references in  $D$, and conversely, the degree to which the proportion deviates from the expected value would reflect the extent of model misspecification. 
+A source of misspecification arises from not accounting for disciplinary heterogeneity by treating all eligible references within WoS as equiprobable substituents when studying a disciplinary network. Under this model, the probability of replacing a reference in one discipline by another reference in a second discipline is identical to the proportion of the articles in WoS that from the second discipline.  If the global model accurately reflects citation practice, the expected proportion of references within papers published in a given discipline $D$ would be approximately equal to the proportion of references in  $D$, and conversely, the degree to which the proportion deviates from the expected value would reflect the extent of model misspecification. 
 
-%We assembled three exemplar datasets using keyword searches for the terms `applied physics', `immunology', and `metabolism' (Materials and Methods).  
-
-To study the disciplinary composition of references in our custom datasets, we first used the high level WoS classification of five major research areas: life sciences and biomedicine, physical sciences, social sciences, technology, and arts and humanities. The two largest of these research areas are physical sciences and life sciences \& biomedicine, which contribute on average approximately 35.1\% and 62.8\%, respectively, of the references in WoS over the three years of interest. \textcolor{blue}{While there is some variability over the years, under the unconstrained model, we would expect close to 35\% of the references cited by the publications in any large network  to be drawn from the physical sciences and close to 63\% of the references to be drawn from  life sciences and biomedicine.}
-Yet the empirical data present a very different  story: 79.6\% of the references cited in physical sciences publications are from the physical sciences and 89.9\% of the references cited in life sciences and biomedicine publications are from the life sciences and biomedicine. In other words, the empirical data shows a strong tendency of publications to cite papers that are in the same major research area rather than in some other research area.  Thus, there is a strong bias towards citations that are {\em intra-network}. Our observations are in agreement with \cite{wallace_lariviere_gingras_2012} who found that, often, a majority of an article's citations are from the specialty of the article, even though that percentage varied among disciplines in the eight specialties they investigated (from approximately 39\% to 89\% for 2006). Furthermore, these findings argue that a discipline-indifferent random graph model would exhibit misspecification (in deviating substantially from the empirical data), and supports the  concern about definitions of  innovation and conventionality that are based on deviation from expected values. 
+To study the disciplinary composition of references in our custom datasets, we first used the high level WoS classification of five major research areas: life sciences \& biomedicine, physical sciences, social sciences, technology, and arts \& humanities. The two largest of these research areas are physical sciences and life sciences \& biomedicine, which contribute on average approximately 35.1\% and 62.8\%, respectively, of the references in WoS over the three years of interest. Under the unconstrained model, we would expect close to 35\% of the references cited by the publications in any large network  to be drawn from the physical sciences and close to 63\% of the references to be drawn from  life sciences and biomedicine. Yet the empirical data present a very different  story: roughly 80\% of the references cited in physical sciences publications are from the physical sciences and 90\% of the references cited in life sciences \& biomedicine publications are from the life sciences \& biomedicine. In other words, the empirical data shows a strong tendency of publications to cite papers that are in the same major research area rather than in some other research area.  Thus, there is a strong bias towards citations that are {\em intra-network}. Our observations are in agreement with \cite{wallace_lariviere_gingras_2012} who found that, often, a majority of an article's citations are from the specialty of the article, even though that percentage varied among disciplines in the eight specialties they investigated (from approximately 39\% to 89\% for 2006). Furthermore, these findings argue that a discipline-indifferent random graph model would exhibit misspecification in deviating substantially from the empirical data, and supports the  concern about definitions of  innovation and conventionality that are based on deviation from expected values. 
 
 \begin{figure}%[tbhp]
 \centering
@@ -230,8 +211,7 @@ Yet the empirical data present a very different  story: 79.6\% of the references
 \label{fig:be}
 \end{figure}
 
-We also analyzed disciplinary composition at a deeper level of the 153 Subjects in WoS extended classification and examining the consequences of  citation shuffling within a disciplinary set or all of the Web of Science.  References in publications belonging to these three datasets were classified into 153 subject areas and summarized as a frequency distribution. A single shuffle of the references in these datasets or all the references in the corresponding WoS year slice was performed, using either the \emph{repcs}  or \emph{umsj} algorithms, after which subject frequencies were computed again. The fold change in subject frequencies of references before and after shuffling was calculated for these groups using all 153 subject categories and are summarized as boxplots in Fig \ref{fig:be}. For example, the applied physics dataset contained one reference labeled Genetics and Heredity, but after the shuffle (using the WoS background), there were 1496 references labeled Genetics and Heredity. Similarly,  the metabolism dataset  contained one reference labeled Philosophy, but after a single shuffle (again using the WoS background), there were   661 occurrences with this label.
-The data show convincingly that the disciplinary composition of references in a network is preserved when citation shuffling is constrained to the subnetwork, but is significantly distorted when the WoS superset is used as a source of substitution. A second inference is that the two algorithms, except for running time considerations, have equivalent effects in this experiment. 
+We also analyzed disciplinary composition at a deeper level using all 153 Subjects in the WoS extended classification and examining the consequences of  citation shuffling within a disciplinary set or all of the Web of Science.  References in publications belonging to these three datasets were summarized as a frequency distribution 153 WoS Subjects as classes. A single shuffle of the references in these datasets or all the references in the corresponding WoS year slice was performed, using either the \emph{repcs}  or \emph{umsj} algorithms, after which subject frequencies were computed again. The fold change in subject frequencies of references before and after shuffling was calculated for these groups using all 153 subject categories and are summarized as boxplots in Fig \ref{fig:be}. As an example, the applied physics dataset contained one reference labeled Genetics and Heredity, but after the shuffle (using the WoS background), acquired 1496 references labeled Genetics and Heredity. Similarly,  the metabolism dataset  contained one reference labeled Philosophy, but after a single shuffle (again using the WoS background), had 661 occurrences with this label. The data show convincingly that the disciplinary composition of references in a network is preserved when citation shuffling is constrained to the subnetwork, but is significantly distorted when the WoS superset is used as a source of substitution. A second inference is that the two algorithms, except for running time considerations, have equivalent effects in this experiment. 
 
 \begin{table}[ht]
 \caption{Model misspecification is reduced by constraining substitutions to the local  disciplinary subnetworks. For the set of journal pairs in common between a disciplinary network and the full WoS dataset, Kullback-Leibler (K-L) divergences
@@ -267,12 +247,8 @@ between empirical and simulated journal pair frequencies were computed for the y
 \end{tabular}
 \end{table}
 
- We tested the conjecture that model misspecification would be reduced by constraining the substitutions to  disciplinary subnetworks by examining the Kullback-Leibler (K-L) Divergence~\citep{kullback_information_1951} between observed and predicted citation distributions, restricted to  the set of journals in a given disciplinary subnetwork.  
- The results (Table \ref{tab:kld}) confirm this prediction: simulations 
-under the constrained model consistently have a lower K-L divergence compared to simulations under the unconstrained model,  where all references in WoS for a given year are equiprobable. 
-\textcolor{blue}{
-Furthermore, the K-L divergence for  the unconstrained model (background network all of WoS) is generally twice as large as the K-L divergence for the constrained models (where the background network is the local disciplinary subnetwork), with ratios that range from 1.96 to 2.77,  and are greater than 2.0 in eight out of nine cases.
-These results clearly demonstrate that constraining reference substitutions to the given local disciplinary network better fits the observed data, so that there is reduced model misspecification.}
+ We then tested the conjecture that model misspecification would be reduced by constraining the substitutions to  disciplinary subnetworks by examining the Kullback-Leibler (K-L) Divergence~\citep{kullback_information_1951} between observed and predicted citation distributions, restricted to  the set of journals in a given disciplinary subnetwork.  
+The results (Table \ref{tab:kld}) confirm this prediction: simulations under the constrained model consistently have a lower K-L divergence compared to simulations under the unconstrained model,  where all references in WoS for a given year are equiprobable. Furthermore, the K-L divergence for  the unconstrained model (background network all of WoS) is generally twice as large as the K-L divergence for the constrained models (where the background network is the local disciplinary subnetwork), with ratios that range from 1.96 to 2.77,  and are greater than 2.0 in eight out of nine cases. These results clearly demonstrate that constraining reference substitutions to the given local disciplinary network better fits the observed data, hence reduced model misspecification.
 
 \subsection{Calculation of Novelty and Conventionality using the constrained model}  
 \begin{figure*}
@@ -282,107 +258,43 @@ These results clearly demonstrate that constraining reference substitutions to t
 (a) Top 1\% of cited articles & (b) Top 10\% of cited articles \\
 \end{tabular}
 \caption{Effect of using the improved model on  categorical hit rates for Immunology, Applied Physics, and WoS for 1995. Panels (a) and (b) show hit rates for the LNLC, LNHC, HNLC, and HNHC categories for the applied physics, immunology, metabolism, and WoS datasets when hit articles are defined as the top 1\% and top 10\% of articles, respectively.  Novelty in both panels is defined at the 10th percentile of articles' z-score distributions. 
-The results for the WoS data set mirror  results from \cite{uzzi_atypical_2013}, where the highest hit rate was for the HNHC category.  Results for the three disciplinary subnetworks all differ from the overall WoS results: the highest hit rates for the immunology and metabolism datasets  are in the LNHC category and
-%The LNHC category often had the highest hit rate for the immunology dataset for various parameter settings with the HCHN category having the highest hit rate in other cases: metabolism results are similar. 
-the highest hit rate for the applied physics datasets are in the HNLC category.  
-%The HNLC category demonstrated the highest hit rate often for applied physics: otherwise the highest hit rate was for HNHC articles.
-\textcolor{blue}{Need numbers for metabolism for the next sentence:}
-The number of data points in the immunology, applied physics, and WoS data sets are 21,917, 18,305, and 476,288, respectively.  
+The results for the WoS data set also show that the highest hit rate is for the HNHC category.  Results for the three disciplinary subnetworks all differ from the overall WoS results: the highest hit rates for the immunology and metabolism datasets  are in the LNHC category and the highest hit rate for the applied physics datasets are in the HNLC category.  
+\textcolor{blue}{Need numbers for metabolism for the next sentence:} The number of data points in the immunology, applied physics, and WoS data sets are 21,917, 18,305, and 476,288, respectively.  
 }
 \label{fig:Fig2}
 \end{figure*}
 
-Since the constrained model better fits the observed data, we evaluated the distribution of 
-highly cited articles  (i.e., ``hit articles")
- in the four categories (HCHN, LCHN, HCLN, LCLN), for different
-thresholds for hit articles.
-Figure \ref{fig:Fig2}, Panels (a) and (b), compares hit rates for the four categories among the Immunology, Metabolism, Applied Physics, and WoS datasets for 1995, where the hit rate is defined as the number of hit articles in each category divided by the number of articles in the category. 
-The calculation for the hit rates for the WoS dataset (bottom row, Figure \ref{fig:Fig2})
-mirrors Uzzi et al.'s results, whereby the largest hit rates were for the HNHC category, despite our methodological changes in sampling citations in proportion to their frequency. 
-However, the trends  for all three  disciplinary subnetworks  are different from those for WoS.
-Specifically, the highest hit rates for the 1995 immunology and metabolism datasets are in the LNHC category for the top 1\% of cited articles (and tied between LNHC and HNHC for the top 10\%),
-and the highest hit rates for the 1995 applied physics datasets are in the 
-HNLC category for both the top 1\% and top 10\% of all cited articles.  
-%Across all years and parameter settings, the highest hit rates in the immunology datasets were sometimes in the LNHC category and sometimes in the HNHC category, and the hit rates for the metabolism datasets reflected this same pattern  (Figure \ref{fig:Fig2}). 
- Thus, the category exhibiting the highest hit rate among highly cited papers depends on the
-specific disciplinary network and to some extent on the threshold for being highly cited.
- %was the case with immunology. 
-Furthermore, the categories displaying the greatest hit rate vary 
-to some extent % with parameter settings and 
-with the year \textcolor{blue}{(data not shown)}.
-%The lack of stable results across parameter settings suggests that parameters must be selected judiciously.
-
-
-%\textcolor{blue}{I did not review the next two paragraphs.  I did--JRB}
+Since the constrained model better fits the observed data, we evaluated the distribution of highly cited articles  (i.e., ``hit articles") in the four categories (HCHN, LCHN, HCLN, LCLN), for different thresholds for hit articles. Figure \ref{fig:Fig2}, Panels (a) and (b), compares hit rates for the four categories among the Immunology, Metabolism, Applied Physics, and WoS datasets for 1995, where the hit rate is defined as the number of hit articles in each category divided by the number of articles in the category. 
+The calculation for the hit rates for the WoS dataset (bottom row, Figure \ref{fig:Fig2}) mirrors Uzzi et al.'s results, whereby the largest hit rates were for the HNHC category, despite our methodological changes in sampling citations in proportion to their frequency.  However, the trends  for all three  disciplinary subnetworks  are different from those for WoS.
+Specifically, the highest hit rates for the 1995 immunology and metabolism datasets are in the LNHC category for the top 1\% of cited articles (and tied between LNHC and HNHC for the top 10\%),and the highest hit rates for the 1995 applied physics datasets are in the HNLC category for both the top 1\% and top 10\% of all cited articles.  Thus, the category exhibiting the highest hit rate among highly cited papers depends on the specific disciplinary network and to some extent on the threshold for being highly cited.
+ 
+Furthermore, the categories displaying the greatest hit rate vary  to some extent with the year \textcolor{blue}{(data not shown)}.
 
 We evaluated the statistical significance of the categorical hit rates using multiple methods.  Our first test was based on the null hypotheses that hits were distributed randomly among the four categories with uniform probability in proportion to the number of articles in each category. Rejecting the null hypothesis, using a Chi-Square Goodness of Fit test, supports a non-uniform dispersion of hits with some of the four categories being associated with higher or lower than expected expected hit rates. The null hypothesis was rejected at a $p<0.001$ in all cases in  Figure \ref{fig:Fig2}, with the exception of the immunology and applied physics datasets where hit articles are designated as the top 1\% of articles: valid tests were not possible in those instances due to too few expected hits. The null hypothesis was rejected with $p<0.001$ for all valid tests for all parameter settings, all datasets, and all years: hypotheses tests were valid in 73 of 96 instances. We conclude that it is likely that the distribution of hits among categories is not uniform and that, instead, hit rates vary among the categories in all datasets. 
 
-We also tested the explanatory power of each framework dimension by classifying articles as %Low Novelty (
-LN %)
- or 
-% High Novelty (
-HN
-%)
- and, separately, as 
-% having Low Conventionality (
-LC
-%) 
-or 
-%High Conventionality (
-HC. 
-%)
-We tested the null hypothesis that hits are distributed between LN and HN (LC and HC) in proportion to the total number of articles assigned to those categories.  That null hypothesis was rejected for the WoS data along both dimensions. Consistent with the findings in~\cite{uzzi_atypical_2013}, hit articles were overrepresented in the HC category in every instance of WoS data at a $p<0.001$ and also overrepresented in the HN category at a $p<0.001$ in all but two cases: the p-values in those exceptions were $0.002$ and $0.007$.  
-Hits in the immunology and metabolism data were overrepresented in the HC category with the same statistical significance as for WoS. \textcolor{blue}{The relationship of novelty with hits in the immunology and metabolism data differed dramatically from the WoS, however, with statistically significant findings of hit articles being sometimes overrepresented in the LN category, and sometimes being underrepresented.}  
-In applied physics, hit articles were positively related with HN with a statistical significance of at least $p<0.10$ in all 12 parameter sets, and at $p<0.05$ in 10 of 12 cases.  Furthermore, a strong positive relationship was found between LC and hit articles in applied physics in 5 of 12 instances with $p<0.10$. These results suggest that (1) both conventionality and novelty are strongly related to hits in the WoS, (2) the conventionality dimension is strongly related with hits in immunology and metabolism and novelty is not, and (3) novelty is more strongly related with hits in applied physics than is conventionality. More generally, we find that the dimensions most strongly related with hit articles vary between disciplinary and broad data sets, and also among disciplines. 
-
+We also tested the explanatory power of each framework dimension by classifying articles as LN or HN and, separately, as LC or HC. We tested the null hypothesis that hits are distributed between LN and HN (LC and HC) in proportion to the total number of articles assigned to those categories.  That null hypothesis was rejected for the WoS data along both dimensions. Consistent with prior findings, hit articles were overrepresented in the HC category in every instance of WoS data at a $p<0.001$ and also overrepresented in the HN category at a $p<0.001$ in all but two cases: the p-values in those exceptions were $0.002$ and $0.007$.  Hits in the immunology and metabolism data were overrepresented in the HC category with the same statistical significance as for WoS. \textcolor{blue}{The relationship of novelty with hits in the immunology and metabolism data differed dramatically from the WoS, however, with statistically significant findings of hit articles being sometimes overrepresented in the LN category, and sometimes being underrepresented.}  In applied physics, hit articles were positively related with HN with a statistical significance of at least $p<0.10$ in all 12 parameter sets, and at $p<0.05$ in 10 of 12 cases.  Furthermore, a strong positive relationship was found between LC and hit articles in applied physics in 5 of 12 instances with $p<0.10$. These results suggest that (1) both conventionality and novelty are strongly related to hits in the WoS, (2) the conventionality dimension is strongly related with hits in immunology and metabolism and novelty is not, and (3) novelty is more strongly related with hits in applied physics than is conventionality. More generally, we find that the dimensions most strongly related with hit articles vary between disciplinary and broad data sets, and also among disciplines. 
 
 We described concerns with model misspecification along two general dimensions: the background dataset and sampling methodology for the random graph. The differences we found from prior research in terms of which categories demonstrated the highest hit rates were caused both by using disciplinary datasets and our sampling methodology through the article z-score distributions. When z-scores are shifted downward using one algorithm versus another, for example, then the former algorithm can result in an increased percentage of HN articles. We thought it important to determine the extent to which each of our methodological differences contributed to our observations.  We found that z-scores of 28.6\% of the journal pairs changed signs with our sampling algorithm, for example, when computed with respect to the WoS dataset versus the immunology dataset.  In contrast, 2.8\% of z-scores changed signs in the WoS dataset depending on whether Uzzi et al.'s or our random model was used.
-% and x\% z-scores changed signs in the case of the immunology dataset. \textcolor{blue}{Need to insert data for the immunology dataset here also for an apples-to-apples comparison.} 
+
 We conclude that the choice of background datasets is the source of a majority of differences we observed the categories demonstrating the highest hit rates, although our sampling approach, most notably sampling from a multiset so as to reflect the observed frequencies of individual citations as well as their associated journals and disciplines, can also create material differences.     
-
-
-%\textcolor{blue}{I think we should delete the next paragraph.}
-%That fewer z-scores are negative in the WoS dataset relative to the immunology dataset may be directly due to the uniform sampling of references, whereby many resulting journal pairs are never observed in the literature and so the expected frequencies of those observed pairs have lower expected values, thus biasing their z-scores upward. In addition, treating citation as a set versus a multiset means that a random model will sample popular citations downward, thus further increasing their z-scores.\emph{need confirmation from Jim here}.
-
 
 \section{Discussion}
 
-%\emph{needs to be expanded}
-
 \textcolor{blue}{
-The fundamental difference between the Uzzi {\em et al.} model and ours is just one parameter--the set of references that can be used as substituents during the substitution process.
-We provided several lines of evidence that showed that changing this one parameter from all of WoS to the local disciplinary subnetwork
-%This study shows strong evidence that constraining the substitution model to the local disciplinary subnetwork 
-reduces model misspecification. Furthermore,  using the constrained model (which allows substitutions only within the local subnetwork)  instead of the unconstrained model (which allows substitutions in the entire WoS network) produces different trends in terms of conventionality and novelty, depending on the subnetwork.}
- In particular, when using the unconstrained model, highly cited papers were most likely to be
-in the HNHC category but this trend does not consistently hold when using the constrained model. Instead, we find that conventionality flavored with novelty is {\em not} generally a feature of impactful research. 
-In particular,  high ``novelty" is not always indicative of impactful research (as reflected in citation counts), as shown by both Immunology and Metabolism having their highest hit rates for low novelty (Figure \ref{fig:Fig2}). 
-%\textcolor{blue}{Placement and relevance to be determined.  This paragraph is not yet well written... still working on it.} 
-Of relevance, we found the category displaying the highest hit rate to be sensitive to the study parameters, which are the percentage of articles classified as hits and the z-score percentile threshold that delineates LN and HN. \textcolor{blue}{(data not shown).} This lack of robustness makes parameter selection of the utmost importance.  
-%However, the most appropriate definitions of novelty, conventionality, and hit articles in the framework that we have applied are not clear.  
+The principal difference between the two models is a single parameter--the set of references that can be used as substituents during the substitution process. We provided several lines of evidence that showed that changing this one parameter from to the local disciplinary subnetwork reduces model misspecification. Furthermore,  using the constrained model (which allows substitutions only within the local subnetwork)  instead of the unconstrained model (which allows substitutions in the entire WoS network) produces different trends in terms of conventionality and novelty, depending on the subnetwork. In particular, when using the unconstrained model, highly cited papers were most likely to be
+in the HNHC category but this trend does not consistently hold when using the constrained model. Instead, we find that conventionality flavored with novelty is {\em not} generally a feature of impactful research. Further,  high ``novelty" is not always indicative of impactful research (as reflected in citation counts), as shown by both Immunology and Metabolism having their highest hit rates for low novelty (Figure \ref{fig:Fig2}). Of relevance, we found the category displaying the highest hit rate to be sensitive to the study parameters, which are the percentage of articles classified as hits and the z-score percentile threshold that delineates LN and HN. \textcolor{blue}{(data not shown).} This lack of robustness makes parameter selection of the utmost importance.  }
 
-\textcolor{blue}{
-More generally, these results show that the conclusions of universal trends in highly cited papers may be the consequence of using a random model that has a poor fit to the observed data and that is not robust to changes in thresholds for defining high impart articles or high novelty. 
-%More research might be done in that regard or, further, in investigating whether the current approach of defining novelty, conventionality, and impactful research sufficiently captures the complexity of the issue at hand. 
-However, although  the constrained model reduces model misspecification compared to the unconstrained model,  this does not imply that the constrained model is reasonable nor that trends observed under the constrained model should be considered relevant to understanding scientific practice.
-Indeed, there are significant  challenges in using random models to understand human behavior, of which citation practice is one example.
-}
-
-\textcolor{blue}{
-However, this study does suggest some directions for future work...
-First, we do show that disciplinary behavior differs, so models based on individual disciplines
-}
-
+More generally, these results show that the trends approaching universality in highly cited papers may be the consequence of using a random model that has a poor fit to the observed data and that is not robust to changes in thresholds for defining high impact or high novelty articles. On the other hand, while  the constrained model reduces model misspecification compared to the unconstrained model, this does not imply that the constrained model is reasonable nor that trends observed under the constrained model convincingly explain scientific practice. Indeed, there are significant  challenges in using random models to understand human behavior, of which citation practice is one example.
 
 \acknowledgments
- We thank the authors of \cite{uzzi_atypical_2013} for sharing their simulation code. We are grateful to Kevin Boyack and Dick Klavans for constructively critical discussions. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. 
-All the code used in this study is freely available from a Github site~\citep{GithubERNIE2019}. Access to the bibliographic data analyzed in this study requires a license from Clarivate Analytics, which had no role in funding, experimental design, review of results, and conclusions presented. 
+ We thank the authors of \cite{uzzi_atypical_2013} for sharing their simulation code. We are grateful to Kevin Boyack and Dick Klavans for constructively critical discussions. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. All the code used in this study is freely available from a Github site~\citep{GithubERNIE2019}. Access to the bibliographic data analyzed in this study requires a license from Clarivate Analytics, which had no role in funding, experimental design, review of results, and conclusions presented. 
 
 \authorcontributions 
 This study was designed by GC, JB, SD, and TW. Simulations and analysis were performed by AD, DLH, GC, JB, and SD. Infrastructure and workflows used to generate data used in this study were developed by AD, DK, SL, SD, and GC.  All authors reviewed and commented on the manuscript, which was written by GC, JB, and TW.
 
-
 \bibliography{cocit_r}
+
+\end{document}
 
 \newpage
 \section{Residual}
@@ -407,7 +319,6 @@ Note also in Figure \ref{fig:scatter} that many z-scores values are significantl
 
 We used the criteria of Uzzi to calculate normalized journal pair frequencies (z-scores) and classify publications according to conventionality and novelty. We observe that z-score calculations are sensitive to the background network (disciplinary or WoS). Figure \ref{fig:scatter} shows that the z-scores for the same journal pair can be positive (negative) when computed with respect to one data set but be negative (positive) for another data set. The journal-pair z-scores in Figure \ref{fig:scatter} have consistent signs for both Immunology and WoS data sets in 71.4\% of the instances and different signs for 28.6\% of the journal pairs. When a journal-pair z-score is negative with respect to one dataset and positive with respect to another dataset, articles citing that pair are more likely to be deemed novel in the first instance and less likely to be deemed novel in the second instance.  It seems that any journal pair should either be indicative of novelty or not, but it should never have contradictory implications that depend on the reference dataset. We view, therefore, these contradictions as symptomatic of inappropriately sampling from a broad dataset and ignoring observed citation patterns.  Figure \ref{fig:scatter} reflects that the WoS data set has approximately 44,000 fewer negative z-scores than does the immunology data set, which contributes to its significantly lower percentage of high-novelty articles.  \emph{The plots I made of the cumulative z-score distributions for Immunology and WoS also could be used to demonstrate this phenomenon, although the scatter plot does this more clearly, and it is more striking.  The scatter plot also encodes more data, that is, the matched z-scores for each journal pair.}
 
-
 \begin{figure}%[tbhp]
 \centering
 \includegraphics[width=3in]{fig2_scatter_z_scores_flattened.pdf}     %width=.8\linewidth
@@ -426,8 +337,6 @@ Scatter plot points (319,005) indicate journal pair z-scores for the 1995 Immuno
 %\end{figure*}
 
 The variation in z-scores with respect to the reference datasets causes the percentages of articles denoted as highly conventional and highly novel to be significantly different, as demonstrated in Figure \ref{fig:Fig1}. \emph{Insert text about Figure \ref{fig:Fig1}.}
-
-
 
 \begin{table}%[tbhp]
 \centering
@@ -456,21 +365,6 @@ WoS95&10\%&10\%& 0.056& 0.115& 0.104& 0.156 \\ \hline
 %% No appendices allowed in Network Neuroscience style
 %\appendix
 
-\end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \subsection{Sample Subsection}
 Text here. Text here. Text here. Text here.
 Text here. Text here. Text here. Text here.
@@ -482,7 +376,6 @@ Text here. Text here. Text here. Text here.
 Text here. Text here. Text here. Text here.
 Text here. Text here. Text here. Text here.
 Text here. Text here. Text here. Text here.
-
 
 \section{Sample equations}
 \begin{equation}
@@ -517,7 +410,6 @@ Text finishing first page.
 Text finishing first page.
 Text finishing first page.
 Text finishing first page.
-
 
 \begin{boxedtext}{Comparative Analysis of Different Classes of Networks} 
 Going beyond the examination of shared topological features across
@@ -641,7 +533,6 @@ the price is not very long;
 \item[(iv)] the duration of leisure bouts is variable.
 \end{enumerate}
 
-
 \subsection{Numbered list:}
 
 \begin{enumerate}
@@ -657,7 +548,6 @@ the price is not very long (as shown by an analysis conducted by
 Y-AB, to be published separately);  
 \item the duration of leisure bouts is variable.
 \end{enumerate}
-
 
 \subsection{Bulleted list:}
 
@@ -688,7 +578,6 @@ leisure bouts;
 the price is not very long (as shown by an analysis conducted by Y-AB, to be published separately); 
 \item[Duration:] the duration of leisure bouts is variable.
 \end{description}
-
 
 \section{Sample figures}
 
