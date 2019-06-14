@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  14 JUN 2019 09:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  14 JUN 2019 10:34
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -963,15 +963,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./NETN_logo.pdf): PDF inclusion: found PDF versi
 on <1.6>, but at most version <1.5> allowed
-<NETN_logo.pdf, id=23, 116.7275pt x 197.97594pt>
+<NETN_logo.pdf, id=25, 116.7275pt x 197.97594pt>
 File: NETN_logo.pdf Graphic file (type pdf)
 <use NETN_logo.pdf>
-Package pdftex.def Info: NETN_logo.pdf  used on input line 111.
+Package pdftex.def Info: NETN_logo.pdf  used on input line 112.
 (pdftex.def)             Requested size: 124.0pt x 210.30962pt.
-<openaccess3.pdf, id=24, 11.5632pt x 13.0086pt>
+<openaccess3.pdf, id=26, 11.5632pt x 13.0086pt>
 File: openaccess3.pdf Graphic file (type pdf)
 <use openaccess3.pdf>
-Package pdftex.def Info: openaccess3.pdf  used on input line 111.
+Package pdftex.def Info: openaccess3.pdf  used on input line 112.
 (pdftex.def)             Requested size: 7.22743pt x 8.13094pt.
 
 Overfull \hbox (1.3pt too wide) has occurred while \output is active
@@ -982,12 +982,12 @@ Overfull \hbox (1.3pt too wide) has occurred while \output is active
 
 pdfTeX warning: pdflatex (file ./CrossMark.pdf): PDF inclusion: found PDF versi
 on <1.6>, but at most version <1.5> allowed
-<CrossMark.pdf, id=25, 329.23pt x 123.46124pt>
+<CrossMark.pdf, id=27, 329.23pt x 123.46124pt>
 File: CrossMark.pdf Graphic file (type pdf)
 <use CrossMark.pdf>
-Package pdftex.def Info: CrossMark.pdf  used on input line 111.
+Package pdftex.def Info: CrossMark.pdf  used on input line 112.
 (pdftex.def)             Requested size: 121.3pt x 45.48778pt.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 111.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 112.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ppl.fd"
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
@@ -996,10 +996,10 @@ Overfull \hbox (2.0pt too wide) has occurred while \output is active
  [][][][][][] 
  []
 
-<colophon.pdf, id=29, 21.80145pt x 22.28325pt>
+<colophon.pdf, id=31, 21.80145pt x 22.28325pt>
 File: colophon.pdf Graphic file (type pdf)
 <use colophon.pdf>
-Package pdftex.def Info: colophon.pdf  used on input line 111.
+Package pdftex.def Info: colophon.pdf  used on input line 112.
 (pdftex.def)             Requested size: 36.135pt x 36.93437pt.
 
 Overfull \hbox (2.0pt too wide) has occurred while \output is active
@@ -1016,7 +1016,7 @@ Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 
 [1{C:/Users/jrbrad/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./NETN_l
 ogo.pdf> <./openaccess3.pdf> <./CrossMark.pdf> <./colophon.pdf>]
-Overfull \hbox (3.20139pt too wide) in paragraph at lines 121--122
+Overfull \hbox (3.20139pt too wide) in paragraph at lines 122--123
 []\OT1/ppl/m/n/9.5 Our anal-y-ses, us-ing mul-ti-ple tech-niques, pro-vides sub
 -stan-tial ev-i-dence that a con-strained
  []
@@ -1051,7 +1051,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 189.
+(amsmath)                 on input line 191.
 
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
@@ -1068,13 +1068,13 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.195 
+l.197 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.195 
+l.197 
       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1089,10 +1089,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5]
-<background-effect.pdf, id=149, 505.89pt x 505.89pt>
+<background-effect.pdf, id=151, 505.89pt x 505.89pt>
 File: background-effect.pdf Graphic file (type pdf)
 <use background-effect.pdf>
-Package pdftex.def Info: background-effect.pdf  used on input line 213.
+Package pdftex.def Info: background-effect.pdf  used on input line 215.
 (pdftex.def)             Requested size: 227.6528pt x 227.6561pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1122,26 +1122,26 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.270 
+l.272 
        <./background-effect.pdf>]
-<Fig2H01N10.pdf, id=178, 334.08414pt x 989.98158pt>
+<Fig2H01N10.pdf, id=180, 334.08414pt x 989.98158pt>
 File: Fig2H01N10.pdf Graphic file (type pdf)
 <use Fig2H01N10.pdf>
-Package pdftex.def Info: Fig2H01N10.pdf  used on input line 275.
+Package pdftex.def Info: Fig2H01N10.pdf  used on input line 277.
 (pdftex.def)             Requested size: 108.405pt x 321.22661pt.
 
 
 pdfTeX warning: pdflatex (file ./blank.pdf): PDF inclusion: found PDF version <
 1.6>, but at most version <1.5> allowed
-<blank.pdf, id=179, 41.66566pt x 33.33253pt>
+<blank.pdf, id=181, 41.66566pt x 33.33253pt>
 File: blank.pdf Graphic file (type pdf)
 <use blank.pdf>
-Package pdftex.def Info: blank.pdf  used on input line 275.
+Package pdftex.def Info: blank.pdf  used on input line 277.
 (pdftex.def)             Requested size: 36.135pt x 28.90852pt.
-<Fig2H10N10.pdf, id=180, 334.1042pt x 997.2497pt>
+<Fig2H10N10.pdf, id=182, 334.1042pt x 997.2497pt>
 File: Fig2H10N10.pdf Graphic file (type pdf)
 <use Fig2H10N10.pdf>
-Package pdftex.def Info: Fig2H10N10.pdf  used on input line 275.
+Package pdftex.def Info: Fig2H10N10.pdf  used on input line 277.
 (pdftex.def)             Requested size: 108.405pt x 323.56972pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1161,7 +1161,7 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.287 
+l.289 
       ]
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1177,7 +1177,7 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.287 
+l.289 
        <./Fig2H01N10.pdf> <./blank.pdf> <./Fig2H10N10.pdf
 
 pdfTeX warning: pdflatex (file ./Fig2H10N10.pdf): PDF inclusion: multiple pdfs 
@@ -1210,7 +1210,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [11] (cocit_r.bbl
 \bibindentwidth=\dimen183
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 270.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 268.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -1249,7 +1249,7 @@ LaTeX Font Warning: Size substitutions with differences
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 298 ({)
+### simple group (level 1) entered at line 300 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  19142 strings out of 492973
@@ -1258,7 +1258,7 @@ Here is how much of TeX's memory you used:
  22746 multiletter control sequences out of 15000+200000
  579613 words of font info for 127 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 47i,20n,65p,1926b,631s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,20n,65p,1926b,641s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
@@ -1271,9 +1271,9 @@ iKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
 alatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on cocit_r.pdf (13 pages, 373287 bytes).
+Output written on cocit_r.pdf (13 pages, 372867 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
+ 472 PDF objects out of 1000 (max. 8388607)
  46 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

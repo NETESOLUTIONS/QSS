@@ -137,8 +137,6 @@ Garfield, E.%
   in Science, Technology, and Humanities }}\ (\PrintOrdinal{1}\ \BEd).
 \newblock
 \APACaddressPublisher{The address}{John Wiley and Sons, ISI Press}.
-\newblock
-\APACrefnote{An optional note}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -507,7 +505,7 @@ Stigler, S.%
   Probability} {Citation patterns in the journals of statistics and
   probability}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Statistical Science}{9}{1}{94-1081}.
+\APACjournalVolNumPages{Statistical Science}{9}{1}{94-108}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
