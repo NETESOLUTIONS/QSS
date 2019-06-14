@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  13 JUN 2019 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  13 JUN 2019 21:50
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -1129,7 +1129,16 @@ File: Fig2H01N10.pdf Graphic file (type pdf)
 <use Fig2H01N10.pdf>
 Package pdftex.def Info: Fig2H01N10.pdf  used on input line 275.
 (pdftex.def)             Requested size: 108.405pt x 321.22661pt.
-<Fig2H10N10.pdf, id=177, 334.1042pt x 997.2497pt>
+
+
+pdfTeX warning: pdflatex (file ./blank.pdf): PDF inclusion: found PDF version <
+1.6>, but at most version <1.5> allowed
+<blank.pdf, id=177, 41.66566pt x 33.33253pt>
+File: blank.pdf Graphic file (type pdf)
+<use blank.pdf>
+Package pdftex.def Info: blank.pdf  used on input line 275.
+(pdftex.def)             Requested size: 36.135pt x 28.90852pt.
+<Fig2H10N10.pdf, id=178, 334.1042pt x 997.2497pt>
 File: Fig2H10N10.pdf Graphic file (type pdf)
 <use Fig2H10N10.pdf>
 Package pdftex.def Info: Fig2H10N10.pdf  used on input line 275.
@@ -1169,7 +1178,7 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.287 
-       <./Fig2H01N10.pdf> <./Fig2H10N10.pdf
+       <./Fig2H01N10.pdf> <./blank.pdf> <./Fig2H10N10.pdf
 
 pdfTeX warning: pdflatex (file ./Fig2H10N10.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
@@ -1214,9 +1223,6 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 236.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \vbox (9.70502pt too high) has occurred while \output is active []
-
-
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
  []
@@ -1231,8 +1237,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
+
+Overfull \hbox (1.80502pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+  []
+ []
+
+[13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
-(cocit_r.aux)
+ (cocit_r.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 324.
 
@@ -1246,13 +1263,13 @@ LaTeX Font Warning: Size substitutions with differences
 ### simple group (level 1) entered at line 298 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19128 strings out of 492973
- 327806 string characters out of 3135929
- 441593 words of memory out of 3000000
- 22736 multiletter control sequences out of 15000+200000
+ 19134 strings out of 492973
+ 327901 string characters out of 3135929
+ 426593 words of memory out of 3000000
+ 22740 multiletter control sequences out of 15000+200000
  579993 words of font info for 128 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 47i,20n,65p,1926b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,20n,65p,1926b,651s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
@@ -1265,9 +1282,9 @@ iKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
 alatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on cocit_r.pdf (12 pages, 317350 bytes).
+Output written on cocit_r.pdf (13 pages, 369617 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 461 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
