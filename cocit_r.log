@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  14 JUN 2019 10:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  14 JUN 2019 10:48
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -1161,7 +1161,7 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.289 
+l.288 
       ]
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1177,7 +1177,7 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.289 
+l.288 
        <./Fig2H01N10.pdf> <./blank.pdf> <./Fig2H10N10.pdf
 
 pdfTeX warning: pdflatex (file ./Fig2H10N10.pdf): PDF inclusion: multiple pdfs 
@@ -1225,7 +1225,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [12])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 326.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1237,24 +1237,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 326.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (cocit_r.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 326.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 326.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 325.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 300 ({)
+### simple group (level 1) entered at line 299 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  19142 strings out of 492973
  328119 string characters out of 3135929
- 426715 words of memory out of 3000000
+ 426735 words of memory out of 3000000
  22746 multiletter control sequences out of 15000+200000
  579613 words of font info for 127 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -1271,7 +1274,7 @@ iKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
 alatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on cocit_r.pdf (13 pages, 372867 bytes).
+Output written on cocit_r.pdf (13 pages, 372820 bytes).
 PDF statistics:
  472 PDF objects out of 1000 (max. 8388607)
  46 named destinations out of 1000 (max. 500000)
