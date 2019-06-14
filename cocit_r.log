@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  14 JUN 2019 08:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  14 JUN 2019 08:59
 entering extended mode
 **./cocit_r.tex
 (cocit_r.tex
@@ -1196,14 +1196,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [10]
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.5> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 314.
-
-
-Package natbib Warning: Citation `hicks_bibliometrics:_2015' on page 11 undefin
-ed on input line 314.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1218,7 +1210,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [11] (cocit_r.bbl
 \bibindentwidth=\dimen183
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 236.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 270.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -1233,10 +1225,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [12])
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 326.
 
 Overfull \hbox (1.80502pt too wide) has occurred while \output is active
 [] 
@@ -1248,10 +1237,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 326.
  (cocit_r.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 324.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 326.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 326.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1263,13 +1252,13 @@ LaTeX Font Warning: Size substitutions with differences
 ### simple group (level 1) entered at line 298 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19134 strings out of 492973
- 327901 string characters out of 3135929
- 426593 words of memory out of 3000000
- 22740 multiletter control sequences out of 15000+200000
- 579993 words of font info for 128 fonts, out of 3000000 for 9000
+ 19142 strings out of 492973
+ 328119 string characters out of 3135929
+ 426715 words of memory out of 3000000
+ 22746 multiletter control sequences out of 15000+200000
+ 579613 words of font info for 127 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 47i,20n,65p,1926b,643s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,20n,65p,1926b,631s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
@@ -1282,9 +1271,9 @@ iKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
 alatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8
 a.pfb>
-Output written on cocit_r.pdf (13 pages, 370404 bytes).
+Output written on cocit_r.pdf (13 pages, 373305 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

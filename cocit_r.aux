@@ -46,8 +46,10 @@
 \newlabel{tab:kld}{{3}{8}{Model misspecification is reduced by constraining substitutions to the local disciplinary networks. We computed Kullback-Leibler (K-L) divergences between empirical and simulated journal pair frequencies using two different background networks (local versus global) for each disciplinary network (applied physics, immunology, and metabolism) for the years 1985, 1995, and 2005. K-L divergence was calculated using the R seewave package \citep {seewave2008}. For every disciplinary network, there is a smaller K-L divergence between simulated and observed data when using the local network (i.e., the disciplinary network) as compared to the global network (all of WoS). Put differently, model misspecification is reduced in the constrained model compared to the unconstrained model}{table.3}{}}
 \@writefile{toc}{\contentsline {subsection}{Calculation of Novelty and Conventionality using the constrained model}{8}{section*.8}}
 \newlabel{fig:Fig2}{{2}{9}{Effect of using the improved model on categorical hit rates for Immunology, Applied Physics, and WoS for 1995. Panels (a) and (b) show hit rates for the LNLC, LNHC, HNLC, and HNHC categories for the applied physics, immunology, metabolism, and WoS datasets when hit articles are defined as the top 1\% and top 10\% of articles, respectively. Novelty in both panels is defined at the 10th percentile of articles' z-score distributions. The results for the WoS data set also show that the highest hit rate is for the HNHC category. Results for the three disciplinary networks all differ from the overall WoS results: the highest hit rates for the immunology and metabolism datasets are in the LNHC category and the highest hit rate for the applied physics datasets are in the HNLC category. \textcolor {blue}{Need numbers for metabolism for the next sentence:} The number of data points in the immunology, applied physics, and WoS data sets are 21,917, 18,305, and 476,288, respectively}{figure.2}{}}
-\citation{hicks_bibliometrics:_2015}
+\citation{wallace_lariviere_gingras_2012}
+\citation{stigler_1994}
 \@writefile{toc}{\contentsline {section}{Discussion}{11}{section*.9}}
+\citation{hicks_bibliometrics:_2015}
 \citation{uzzi_atypical_2013}
 \citation{GithubERNIE2019}
 \bibdata{cocit_r}
@@ -56,19 +58,21 @@
 \bibcite{de_solla_price_networks_1965}{{3}{{\APACyear {1965}}}{{de Solla~Price}}{{de Solla~Price}}}
 \bibcite{garfield_citation_1955}{{4}{{\APACyear {1955}}}{{Garfield}}{{Garfield}}}
 \bibcite{garfield_1979}{{5}{{\APACyear {1979}}}{{Garfield}}{{Garfield}}}
-\bibcite{Keserci371955}{{6}{{\APACyear {2018}}}{{Keserci\ \BOthers {.}}}{{Keserci, Davey, Pico, Korobskiy,{}\ \BBA  {} Chacko}}}
-\bibcite{klavans_research_2017}{{7}{{\APACyear {2017}}}{{Klavans\ \BBA  {} Boyack}}{{Klavans\ \BBA  {} Boyack}}}
-\bibcite{GithubERNIE2019}{{8}{{\APACyear {2019}}}{{Korobskiy\ \BOthers {.}}}{{Korobskiy, Davey, Liu, Devarakonda,{}\ \BBA  {} Chacko}}}
-\bibcite{kullback_information_1951}{{9}{{\APACyear {1951}}}{{Kullback\ \BBA  {} Leibler}}{{Kullback\ \BBA  {} Leibler}}}
-\bibcite{marshakova-shaikevich_co-citation_1973}{{10}{{\APACyear {1973}}}{{Marshakova-Shaikevich}}{{Marshakova-Shaikevich}}}
-\bibcite{moed_measuring_2010}{{11}{{\APACyear {2010}}}{{Moed}}{{Moed}}}
-\bibcite{newman_structure_2001}{{12}{{\APACyear {2001}}}{{Newman}}{{Newman}}}
-\bibcite{patience_pmid28560354}{{13}{{\APACyear {2017}}}{{Patience\ \BOthers {.}}}{{Patience, Patience, Blais,{}\ \BBA  {} Bertrand}}}
-\bibcite{perline_strong_2005}{{14}{{\APACyear {2005}}}{{Perline}}{{Perline}}}
-\bibcite{Shi:2010:CHI:1816123.1816131}{{15}{{\APACyear {2010}}}{{Shi\ \BOthers {.}}}{{Shi, Leskovec,{}\ \BBA  {} McFarland}}}
-\bibcite{small_co-citation_1973}{{16}{{\APACyear {1973}}}{{Small}}{{Small}}}
-\bibcite{stringer_statistical_2010}{{17}{{\APACyear {2010}}}{{Stringer\ \BOthers {.}}}{{Stringer, Sales-Pardo,{}\ \BBA  {} Amaral}}}
-\bibcite{seewave2008}{{18}{{\APACyear {2008}}}{{Sueur\ \BOthers {.}}}{{Sueur, Aubin,{}\ \BBA  {} Simonis}}}
-\bibcite{uzzi_atypical_2013}{{19}{{\APACyear {2013}}}{{Uzzi\ \BOthers {.}}}{{Uzzi, Mukherjee, Stringer,{}\ \BBA  {} Jones}}}
-\bibcite{wallace_lariviere_gingras_2012}{{20}{{\APACyear {2012}}}{{Wallace\ \BOthers {.}}}{{Wallace, Lariviere,{}\ \BBA  {} Gingras}}}
-\bibcite{10.3389/frma.2018.00020}{{21}{{\APACyear {2018}}}{{Zuckerman}}{{Zuckerman}}}
+\bibcite{hicks_bibliometrics:_2015}{{6}{{\APACyear {2015}}}{{Hicks\ \BOthers {.}}}{{Hicks, Wouters, Waltman, de Rijcke,{}\ \BBA  {} Rafols}}}
+\bibcite{Keserci371955}{{7}{{\APACyear {2018}}}{{Keserci\ \BOthers {.}}}{{Keserci, Davey, Pico, Korobskiy,{}\ \BBA  {} Chacko}}}
+\bibcite{klavans_research_2017}{{8}{{\APACyear {2017}}}{{Klavans\ \BBA  {} Boyack}}{{Klavans\ \BBA  {} Boyack}}}
+\bibcite{GithubERNIE2019}{{9}{{\APACyear {2019}}}{{Korobskiy\ \BOthers {.}}}{{Korobskiy, Davey, Liu, Devarakonda,{}\ \BBA  {} Chacko}}}
+\bibcite{kullback_information_1951}{{10}{{\APACyear {1951}}}{{Kullback\ \BBA  {} Leibler}}{{Kullback\ \BBA  {} Leibler}}}
+\bibcite{marshakova-shaikevich_co-citation_1973}{{11}{{\APACyear {1973}}}{{Marshakova-Shaikevich}}{{Marshakova-Shaikevich}}}
+\bibcite{moed_measuring_2010}{{12}{{\APACyear {2010}}}{{Moed}}{{Moed}}}
+\bibcite{newman_structure_2001}{{13}{{\APACyear {2001}}}{{Newman}}{{Newman}}}
+\bibcite{patience_pmid28560354}{{14}{{\APACyear {2017}}}{{Patience\ \BOthers {.}}}{{Patience, Patience, Blais,{}\ \BBA  {} Bertrand}}}
+\bibcite{perline_strong_2005}{{15}{{\APACyear {2005}}}{{Perline}}{{Perline}}}
+\bibcite{Shi:2010:CHI:1816123.1816131}{{16}{{\APACyear {2010}}}{{Shi\ \BOthers {.}}}{{Shi, Leskovec,{}\ \BBA  {} McFarland}}}
+\bibcite{small_co-citation_1973}{{17}{{\APACyear {1973}}}{{Small}}{{Small}}}
+\bibcite{stigler_1994}{{18}{{\APACyear {1994}}}{{Stigler}}{{Stigler}}}
+\bibcite{stringer_statistical_2010}{{19}{{\APACyear {2010}}}{{Stringer\ \BOthers {.}}}{{Stringer, Sales-Pardo,{}\ \BBA  {} Amaral}}}
+\bibcite{seewave2008}{{20}{{\APACyear {2008}}}{{Sueur\ \BOthers {.}}}{{Sueur, Aubin,{}\ \BBA  {} Simonis}}}
+\bibcite{uzzi_atypical_2013}{{21}{{\APACyear {2013}}}{{Uzzi\ \BOthers {.}}}{{Uzzi, Mukherjee, Stringer,{}\ \BBA  {} Jones}}}
+\bibcite{wallace_lariviere_gingras_2012}{{22}{{\APACyear {2012}}}{{Wallace\ \BOthers {.}}}{{Wallace, Lariviere,{}\ \BBA  {} Gingras}}}
+\bibcite{10.3389/frma.2018.00020}{{23}{{\APACyear {2018}}}{{Zuckerman}}{{Zuckerman}}}

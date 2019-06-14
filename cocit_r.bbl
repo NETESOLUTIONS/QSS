@@ -142,6 +142,40 @@ Garfield, E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hicks%
+, Wouters%
+, Waltman%
+, de Rijcke%
+\BCBL {}\ \BBA {} Rafols%
+}{%
+Hicks%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+hicks_bibliometrics:_2015}
+\APACinsertmetastar {%
+hicks_bibliometrics:_2015}%
+\begin{APACrefauthors}%
+Hicks, D.%
+, Wouters, P.%
+, Waltman, L.%
+, de Rijcke, S.%
+\BCBL {}\ \BBA {} Rafols, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{{\APACmonth{04}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bibliometrics: {The} {Leiden} {Manifesto} for research
+  metrics} {Bibliometrics: {The} {Leiden} {Manifesto} for research
+  metrics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature News}{520}{7548}{429}.
+\newblock
+\begin{APACrefDOI} \doi{10.1038/520429a} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Keserci%
 , Davey%
 , Pico%
@@ -450,6 +484,30 @@ Small, H.%
   Science}{24}{4}{265--269}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/asi.4630240406} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stigler%
+}{%
+Stigler%
+}{%
+{\protect \APACyear {1994}}%
+}]{%
+stigler_1994}
+\APACinsertmetastar {%
+stigler_1994}%
+\begin{APACrefauthors}%
+Stigler, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1994}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Citation Patterns in the Journals of Statistics and
+  Probability} {Citation patterns in the journals of statistics and
+  probability}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Statistical Science}{9}{1}{94-1081}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
