@@ -1,0 +1,103 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{QSS27: Revision II}
+\author{George Chacko}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+Dear Dr. Waltman:
+
+\vspace{5mm}
+\raggedright 
+Thank you for the opportunity to submit a revision. Again, we thank the reviewers for their diligence and professional courtesy. We have considered the comments from both reviewers carefully and provide a response below. The response is also reflected in a revised manuscript with blue text indicating where changes have been made to the first revision. We have also responded to your suggestion that we include a discussion of the work of Wang, Veugelers, and Stephan. 
+
+\vspace{3mm}
+Sincerely
+\vspace{5mm}
+
+George Chacko
+
+\section{Reviews}
+\subsection{Reviewer 1}
+
+\emph{The revised manuscript is much improved, and the specific comments to both reviews were very helpful. Overall, the authors have addressed all of the issues I’ve raised satisfactorily. The paper is important as a critique to Uzzi.The paper does not claim to present an alternative (better) way to identify innovative papers.  But I was hoping that it could- and agree with the editor that the additional requirement (of comparing evaluations from both approaches) is not needed.
+In my second reading, I did realize one additional flaw that I would like the authors to address- upon the editor’s discretion.  It looks like the study had a low threshold (just two references) for including papers in their studies. And we know that citation impact is correlated with the number of references. Is it possible that the signals they (or Uzzi) get for ‘innovative’ or ‘conforming’ are dependent on the number of references? This can be easily checked (a simple table of \# of references and likelihood of a signal of conformity or innovativeness) should be done. I suspect you won’t get any signal for papers with fewer than 5 references (how can one really assess either concept with such a small number?).  But with 10 or more references- I'm quite comfortable with conclusions about impact being based on conformity and innovativeness. They may also find, when applying a reference threshold (such as 10) that they get different results.}
+
+\begin{itemize}
+\item The reference count issue is interesting although it is not quite clear what is meant by signal. We chose to set the threshold at 2 references since it is the smallest number that yields a reference pair. It is perhaps useful to be reminded that these reference pairs are then mapped to journal pairs whose frequencies are summed across the dataset being studied, then normalized, and finally returned to the parent article as z-scores. The reviewer argues that 10 references (45 z-scores) would be a reassuring number. This choice appears intuitive rather than reasoned but likely reflects insight. However, there is a penalty for arbitrarily excluding low-reference publications. For example, restricting the applied physics dataset from 1985 we analyze (ap\_1985) to those with 5 references or less results in a loss of 28\% of the publications and their associated references. \\
+
+\vspace{1mm}
+We reviewed the literature in which correlation between reference count and citations is claimed. In particular, we studied Peters and van Raan (1994) and Vieira and Gomes (2010) since other articles reporting a correlation between reference count and citations seem to eventually trail back to these two. 
+\begin{enumerate}
+\item Peters and van Raan used a set of 226 articles drawn from the bibliographies of 18 internationally recognized chemical engineers for the years 1977-1986. They observed a possible bi-phasic distribution when 5-year impact was measured in a histogram with reference count intervals of 5 between groups ($<=9, 10-14, 15-19, 20-24, 35-29, 30-34, >=35$). They reported a Pearson's correlation coefficient of 0.52 and inferred a weak but positive correlation (Fig 1d and Table 1 of their paper) consistent with the observations of Moed \emph{et al} 1985. This is not very convincing (or easily compared to our larger datasets from later years) but we do respect the finding. 
+
+\item More interestingly, Vieira and Gomes examined 226,166 articles from 2004 classified into Biology \& Biochemistry, Chemistry, Mathematics, and Physics per the WOS ESI. Biology and Biochemistry consisted of 455 journals, 44248 articles; Chemistry (574j, 97177a); Mathematics (387j, 20127a); and Physics (338j, 64614a). Our study differs in that we are looking at different subsets of the data, larger amounts of data, and counting citations for the first 8 years. 
+
+As far as we can tell, these authors counted total citations accumulated in around 5 years (the paper was submitted and accepted in 2009).  Fig 9 of their paper shows a positive relationship between the number of references and the citations that differs in slope and intercept between subjects when a linear fit is applied to the data.  We evaluated the relationship between references and citation counts on all 9 local networks we analyzed in this paper using the approach of Vieira and Gomes. The results are very interesting. When plotting reference counts (independent variable on the x axis) against the mean of citation counts we see a linear relationship that gets noisy after about papers with 75 references or more (our Figure 1 below). This is consistent with the observations of Vieira and Gomes and not unexpected since the noisy part of the data could be accounted for by review articles. However, when plotting citation counts (independent variable on the x axis) against the mean of reference counts the results suggest that publications with a broad range of cited references can accrue similar citations over the first 8 years since publication (our Figures 2 \& 3). We conclude that Fig 9 of Vieira and Gomes masks the variance of citation counts when the mean citation count is plotted as a dependent variable. Thus, the basis for arguing that reference counts correlate with citation counts is a little shaky although it may be true for a narrow range and subset of articles (Figure 3, column 3 in particular). In other words, trying to focus the analysis on just a subset of the data based on number of references is not likely to provide much insight. Nor will studying this be simple as not only reference counts but a number of factors would seem to explain the variance (both Peters and van Raan \& Vieira and Gomes). 
+
+However, controlling for the number of references (as a proxy for the number of z-scores) in a publication appears reasonable so we provide some data below. Perhaps this is what the reviewer had in mind as well?
+\end{enumerate}
+\item INSERT Jim's data
+\end{itemize}
+
+\subsection{Reviewer 2}
+
+\emph{I would like to thank the authors for the revision.  However, I am afraid the revision has not sufficiently addressed my concerns. First, thanks for clarifying the reference shuffling.  Let’s say Pub A has a reference B, A is in discipline X and B in discipline Y.  I initially thought the local network approach swaps B with another reference which is also in discipline Y.  The authors actually did was to swap B with another reference from another paper which is in discipline X.  Is that correct?  The authors have clarified it in the paper, but I think it still needs to improved, maybe provide some illustrative examples.  Although my initial comment was because of misunderstanding the method, the underlying argument still holds.  It is still unclear whether global or discipline-specific novelty is more appropriate.  For example, bibliometrics papers cite a lot of mathematics paper, so in the pool of references cited by bibliometrics, combinations between bibliometrics and mathematics are very common.  However, mathematics do not cite bibliometrics so much, then combinations between bibliometrices and mathematics seems rather unusual when examining the mathematics.  I can see arguments supporting both the global and local approaches.  I do not think this paper can get away with it without clarifying the conceptualization. Second, the relationship between novelty/conventionality and citation impact itself does not seem to be a ground truth. Using statistics about misspecification is based on a huge assumption, which needs to be made explicit and supported by conceptualization and theories.}
+
+\begin{itemize}
+\item An illustration has been generated that will be added to supplementary material that contains material from the first rebuttal.
+\item Yes, the reviewers description of our citation swapping strategy is now correct. Further, a difference between bibliometrics and mathematics may be that bibliometrics papers cite mathematics papers more often than the other way around. The local model accounts for this but the global one does not. We argue consistently that local models reduce mis-specification and provide data to support the argument.
+\item The relationship between novelty, conventionality, and citation counts is not a ground truth, we have never claimed it is. This framework was developed by Uzzi et al. (2013) and we have used it to enable \emph{ceteris paribus} comparisons. We cannot address the question of the `huge assumption', which is not actually stated by the reviewer- we don't think we make such an assumption.
+\end{itemize}
+
+\subsection{Editor}
+\emph{I have one other suggestion. In addition to the work on novelty by Brian Uzzi and colleagues, there is also work on novelty by Reinhilde Veugelers and colleagues, who operationalize novelty in a different way. For completeness, you may consider providing a brief discussion of the work by Veugelers and colleagues in your manuscript.}
+\begin{itemize}
+\item We thank you for bringing this publication to our attention. We really ought to have cited it but we were guilty of, perhaps myopically, focusing on the details of the random graph approach. Discussing this paper broadens the context of our manuscript and we've now referenced it in the Discussion. As one of our co-authors observes, the definition of novelty is a little restrictive to say the least but the paper is an excellent one and we are happy to reference it.
+\item We have also added a sentence about the limitations of grouping by journals and have suggested that analyzing article level clusters may be more insightful. This has come out of our more recent interest in clustering, which informs this new direction.
+ \end{itemize}
+ 
+ \newpage
+
+\begin{figure}[tbhp]
+\centering
+\includegraphics[width=0.6\linewidth]{all_ref_cit_year_gp}     
+\caption{Apparent linear relationship between reference count(x-axis) and citation count(y-axis). Data from 9 local networks analyzed in our paper are shown. These results are approximately consistent with the observations of Vieira and Gomes(2010)} 
+\label{fig:refcit}
+\end{figure}
+\newpage
+
+\begin{figure}[tbhp]
+\centering
+\includegraphics[width=0.6\linewidth]{all_cit_ref_year_gp}     
+\caption{Inversion of axes unmasks variance in citation counts. In this case, the mean of reference counts is plotted as a dependent variable and citation counts are plotted as an independent variable. Data from 9 local networks analyzed in our paper are shown as in previous Figure. These results are not consistent with the observations  of Vieira and Gomes(2010)} 
+\label{fig:citref}
+\end{figure}
+\newpage
+
+\begin{figure}[tbhp]
+\centering
+\includegraphics[width=0.9\linewidth]{all_cit_ref_year_gp_zoom}     
+\caption{Inversion of axes unmasks variance in citation counts. In this case, the mean of reference counts is plotted as a dependent variable and citation counts are plotted as an independent variable [ZOOMED from Figure 2]. Data from 9 local networks analyzed in our paper are shown. To enable better visualization, the citation counts from Fig 2 are restricted at the lower end to the 90th percentile or greater for the ap\_1985 dataset (the smallest of the 9 datasets) and to an upper limit of 2000 citations to exclude a single outlier value,. These results are not consistent with the observations  of Vieira and Gomes(2010)} 
+\label{fig:refcit}
+\end{figure}
+\newpage
+
+
+\end{document}  
