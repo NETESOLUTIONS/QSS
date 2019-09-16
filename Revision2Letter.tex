@@ -38,7 +38,7 @@ George Chacko
 
 \emph{The revised manuscript is much improved, and the specific comments to both reviews were very helpful. Overall, the authors have addressed all of the issues I’ve raised satisfactorily. The paper is important as a critique to Uzzi. The paper does not claim to present an alternative (better) way to identify innovative papers.  But I was hoping that it could- and agree with the editor that the additional requirement (of comparing evaluations from both approaches) is not needed. In my second reading, I did realize one additional flaw that I would like the authors to address- upon the editor’s discretion.  It looks like the study had a low threshold (just two references) for including papers in their studies. And we know that citation impact is correlated with the number of references. Is it possible that the signals they (or Uzzi) get for ‘innovative’ or ‘conforming’ are dependent on the number of references? This can be easily checked (a simple table of \# of references and likelihood of a signal of conformity or innovativeness) should be done. I suspect you won’t get any signal for papers with fewer than 5 references (how can one really assess either concept with such a small number?).  But with 10 or more references- I'm quite comfortable with conclusions about impact being based on conformity and innovativeness. They may also find, when applying a reference threshold (such as 10) that they get different results.}
 
-In fact, what began as a simple experiment turned out to be quite complicated and, in our assessment, out of scope for this article  We have modified the Discussion to make this point. In addition, we emphasize that innovation and conventionality are measured by legacy conventions that assist disciplined thought but should not be considered ground truth.
+In fact, what began as a simple experiment turned out to be quite complicated and, in our assessment, out of scope for this article  We have modified the Discussion to make this point. In addition, we emphasize that innovation and conventionality are measured by legacy conventions (Uzzi) that assist disciplined thought but should not be considered ground truth. This point is also made in the manuscript.
 
 \begin{itemize}
  \item We reviewed the literature in which correlation between reference count and citations is claimed. In particular, we studied Peters and van Raan (1994) and Vieira and Gomes (2010) since other articles reporting a correlation between reference count and citations seem to eventually trail back to these two. 
@@ -51,35 +51,9 @@ Fig 9 of their paper shows a positive relationship between the number of referen
 
 Thus, the basis for arguing that reference counts generally correlates with citation counts seems a little shaky although it may be true for a narrow range and subset of articles (Figure 3, column 3 in particular). A number of factors help explain variance in citation counts (both Peters and van Raan \& Vieira and Gomes), particularly impact of publishing journal and impact of cited references so focusing on reference count alone seems distracting to the purpose of our paper. 
 
-\item Nevertheless, the reference count issue raised is interesting in itself (although it is not quite clear what is meant by signal) so we have added a sentence to the Discussion addressing it. The reviewer argues that 10 references (45 z-scores/article) would be a reassuring number. This choice appears intuitive rather than reasoned. In our manuscript, we chose to set the threshold at 2 references since it is the smallest number that yields a reference pair. This threshold also supports comparison with Uzzi's data. It is perhaps useful to be reminded that these reference pairs are then mapped to journal pairs whose frequencies are summed across the dataset being studied, then normalized, and finally returned to the parent article as z-scores. Lastly, there is a penalty for arbitrarily excluding low-reference publications. For example, restricting the applied physics dataset from 1985 (ap\_1985) to publications with 5 references or less results in a loss of 28\% of the publications and associated references. For the two biology-based datasets recovery of between 92-95 \% of the publications we analyzed occurs when a cutoff of 10 references is applied. For the applied\_physics dataset, which has different citation and reference characteristics, we would recover between 45-69\% for the three years we studied. For the complete WoS set, recovery ranges between 63-77\% (again consistent with allWos being a mixture of disciplines). This is not surprising, we expect disciplinary differences but a cutoff value of 10 references has different effects that need to be carefully studied along with the other variables that contribute to citation counts.
+\item Nevertheless, the reference count issue raised is interesting in itself (although it is not quite clear what is meant by signal) so we have added a sentence to the Discussion addressing it. The reviewer argues that 10 references (45 z-scores/article) would be a reassuring number. This choice appears intuitive rather than reasoned. In our manuscript, we chose to set the threshold at 2 references since it is the smallest number that yields a reference pair. This threshold also supports comparison with Uzzi's data. It is useful to be reminded that these reference pairs are then mapped to journal pairs whose frequencies are summed across the dataset being studied, then normalized, and finally returned to the parent article as z-scores. Lastly, there is a penalty for arbitrarily excluding low-reference publications. For example, restricting the applied physics dataset from 1985 (ap\_1985) to publications with 5 references or less results in a loss of 28\% of the publications and associated references. For the two biology-based datasets recovery of between 92-95 \% of the publications we analyzed occurs when a cutoff of 10 references is applied. For the applied\_physics dataset, which has different citation and reference characteristics, we would recover between 45-69\% for the three years we studied. For the complete WoS set, recovery ranges between 63-77\% (again consistent with allWos being a mixture of disciplines). This is not surprising, we expect disciplinary differences but a cutoff value of 10 references has different effects that need to be carefully studied along with the other variables that contribute to citation counts.
 
-\vspace{3mm} Even so, \emph{we INSERT Jim's new data here... }
-
-\begin{table}[ht]
-\begin{centering}
-\caption{Hit Rates By Category: Effect of Omitting Articles with 10 and Fewer References}
-\vspace{3mm}
-\begin{tabular}{|c crr rrr r|}
- \hline
- Dataset & Year & Hit Rate & Omitted  & LNLC & LNHC & HNLC & HNHC \\ 
-  \hline
-Metabolism & 2005&1\%&& 0.6& \bf{1.3}& 0.7& \bf{1.3} \\ 
-Metabolism & 2005&1\%& \checkmark & 0.7& \bf{1.4}& 0.7& \bf{1.2} \\ 
-\hline
-Metabolism & 2005&2\%&& 1.0& \bf{2.5}& 1.5& \bf{2.6} \\ 
-Metabolism & 2005&2\%& \checkmark & 1.2& \bf{2.7}& 1.5& \bf{2.5} \\ 
-\hline
-Metabolism & 2005&5\%&& 2.3& 6.0& 3.9& \bf{6.6} \\ 
-Metabolism & 2005&5\%& \checkmark & 2.7& \bf{6.3} & 3.8& \bf{6.4} \\ 
-\hline
-Metabolism & 2005&10\%&& 4.1& 11.4& 8.1& \bf{12.6} \\ 
-Metabolism & 2005&10\%& \checkmark & 5.3& \bf{12.0} & 8.1& \bf{12.5} \\ 
-\hline
-\end{tabular} \\
-\end{centering}
-\end{table} 
-\end{enumerate}
-\end{itemize}
+\vspace{3mm} Even so, we have followed up on the question.The hit rates for (i) our original data sets and (ii) the hit rates for those same data sets omitting articles having 10 or fewer references are shown in Tables 1 and 2, respectively.  While omission of these articles poses difficulties with maintaining the feasibility of chi square hypothesis tests, these tables indicate that the hit rates do not change appreciably with the omission of these articles and, more importantly, the adjusted hit rates revisions still support the conclusions reached in the original version of our article.  The dominant hit rates have been highlighted in boldface for easy comparison of the two tables."}
 
 \subsection{Reviewer 2}
 
@@ -87,7 +61,7 @@ Metabolism & 2005&10\%& \checkmark & 5.3& \bf{12.0} & 8.1& \bf{12.5} \\
 
 \begin{itemize}
 \item An illustration has been generated that will be added to supplementary material that contains figures from the first rebuttal.
-\item Yes, the reviewer's description of our citation swapping strategy is now correct. Further, a difference between bibliometrics and mathematics may be that bibliometrics papers cite mathematics papers more often than the other way around. The local model accounts for this but the global one does not. We argue consistently that local models reduce mis-specification and provide data to support the argument.
+\item Yes, the reviewer's description of our citation swapping strategy is now approximately correct. Further, a difference between bibliometrics and mathematics may be that bibliometrics papers cite mathematics papers more often than the other way around. The local model accounts for this but the global one does not. We argue consistently that local models reduce mis-specification and provide data to support the argument.
 \item We agree with the reviewer that Uzzi et al. make an assumption regarding this connection between novelty, conventionality, and citation counts. We have not portrayed this assumption as a ground truth in the manuscript. This framework was developed by Uzzi et al. (2013) and we have used it to enable \emph{ceteris paribus} comparisons between our work and prior art. Furthermore, the analysis we provided using K-L divergence (between a generative model and the empirical data) establishes that there is a reduction in model misspecification by restricting to local networks and is independent of this assumption.
 \end{itemize}
 
@@ -122,6 +96,144 @@ Metabolism & 2005&10\%& \checkmark & 5.3& \bf{12.0} & 8.1& \bf{12.5} \\
 \label{fig:refcit}
 \end{figure}
 \newpage
+
+\begin{table}
+\begin{centering}
+\caption{Hit Rates By Category: All Data}
+\vspace{3 mm}
+\scalebox{0.8}{
+\begin{tabular}{|c crrrr r|}
+ \hline
+Dataset & Year & Highly Cited  & LNLC & LNHC & HNLC & HNHC \\ 
+ \hline
+Applied Physics & 1985&1\%& 0.0& 0.5& \bf{1.2}& \bf{1.2} \\ 
+Applied Physics & 1985&2\%& 0.9& 0.9& \bf{2.5}& \bf{2.4} \\ 
+Applied Physics & 1985&5\%& 2.8& 3.0& 5.5& \bf{6.5} \\ 
+Applied Physics & 1985&10\%& 5.2& 6.7& 10.6& \bf{13.2} \\ 
+Applied Physics & 1995&1\%& 0.2& 0.7& \bf{1.2}& \bf{1.0} \\ 
+Applied Physics & 1995&2\%& 0.2& 1.3& \bf{2.5}& 2.1 \\ 
+Applied Physics & 1995&5\%& 0.9& 3.4& \bf{6.0}& 5.2 \\ 
+Applied Physics & 1995&10\%& 4.7& 7.9& \bf{12.3}& 10.9 \\ 
+Applied Physics & 2005&1\%& 0.8& 0.6& \bf{1.1}& \bf{1.3} \\ 
+Applied Physics & 2005&2\%& 1.1& 1.3& \bf{2.1}& \bf{2.3}\\ 
+Applied Physics & 2005&5\%& 1.6& 3.3& 5.4& \bf{5.9} \\ 
+Applied Physics & 2005&10\%& 3.9& 7.5& 10.7& \bf{11.4} \\
+\hline 
+Immunology & 1985&1\%& 0.0& \bf{1.5}& 0.6& \bf{1.4} \\ 
+Immunology & 1985&2\%& 0.0& \bf{3.0}& 1.2& \bf{2.8} \\ 
+Immunology & 1985&5\%& 1.5& 6.5& 3.2& \bf{7.1} \\ 
+Immunology & 1985&10\%& 3.0& 12.0& 7.1& \bf{14.0} \\ 
+Immunology & 1995&1\%& 0.0& \bf{1.9}& 0.5& 1.4 \\ 
+Immunology & 1995&2\%& 0.0& \bf{3.4}& 1.1& 2.8 \\ 
+Immunology & 1995&5\%& 0.6& \bf{7.2}& 3.2& 6.8 \\ 
+Immunology & 1995&10\%& 1.7& \bf{12.8}& 7.6& \bf{12.9} \\ 
+Immunology & 2005&1\%& 0.0& \bf{1.5}& 0.6& \bf{1.3} \\ 
+Immunology & 2005&2\%& 0.0& \bf{2.7}& 1.3& \bf{2.7} \\ 
+Immunology & 2005&5\%& 0.0& 6.0& 3.6& \bf{6.7} \\ 
+Immunology & 2005&10\%& 2.0& 10.8& 8.1& \bf{12.9} \\ 
+\hline
+Metabolism & 1985&1\%& 0.1& \bf{1.5}& 0.5& \bf{1.5} \\ 
+Metabolism & 1985&2\%& 0.3& \bf{2.7}& 1.3& \bf{2.9} \\ 
+Metabolism & 1985&5\%& 0.7& 6.6& 3.4& \bf{7.0} \\ 
+Metabolism & 1985&10\%& 2.3& 12.3& 7.2& \bf{13.8} \\ 
+Metabolism & 1995&1\%& 0.1& \bf{1.7}& 0.6& \bf{1.4} \\ 
+Metabolism & 1995&2\%& 0.3& \bf{3.1}& 1.2& \bf{2.8} \\ 
+Metabolism & 1995&5\%& 0.7& \bf{7.}0& 3.4& \bf{6.7} \\ 
+Metabolism & 1995&10\%& 1.9& \bf{13.0}& 7.4& \bf{13.3} \\ 
+Metabolism & 2005&1\%& 0.6& \bf{1.3}& 0.7& \bf{1.3} \\ 
+Metabolism & 2005&2\%& 1.0& \bf{2.5}& 1.5& \bf{2.6} \\ 
+Metabolism & 2005&5\%& 2.3& 6.0& 3.9& \bf{6.6} \\ 
+Metabolism & 2005&10\%& 4.1& 11.4& 8.1& \bf{12.6} \\ 
+\hline
+Web of Science & 1985&1\%& 0.4& 1.2& 1.0& \bf{1.6} \\ 
+Web of Science & 1985&2\%& 0.9& 2.4& 2.0& \bf{3.3} \\ 
+Web of Science & 1985&5\%& 2.6& 5.9& 5.1& \bf{8.4} \\ 
+Web of Science & 1985&10\%& 5.8& 11.4& 10.4& \bf{15.8} \\ 
+Web of Science & 1995&1\%& 0.4& 1.3& 0.9& \bf{1.7} \\ 
+Web of Science & 1995&2\%& 0.9& 2.4& 1.9& \bf{3.3} \\ 
+Web of Science & 1995&5\%& 2.5& 6.0& 5.0& \bf{8.0} \\ 
+Web of Science & 1995&10\%& 5.6& 11.5& 10.4& \bf{15.6} \\ 
+Web of Science & 2005&1\%& 0.4& 1.2& 1.0& \bf{1.7} \\ 
+Web of Science & 2005&2\%& 0.9& 2.3& 2.0& \bf{3.4} \\ 
+Web of Science & 2005&5\%& 2.5& 5.7& 5.3& \bf{8.1} \\ 
+Web of Science & 2005&10\%& 5.6& 11.2& 10.8& \bf{15.0} \\
+\hline
+%\multicolumn{7}{l}{\multirow{5}{*}{\parbox{12cm}{The hit rate is the percentage of publications in the referenced category that are in the top $1\%$, $2\%$, $5\%$, or $10\%$ of papers according to citation count  (see column 3) for novel articles defined as those with the 10th percentile z-score being negative. The z-scores are computed using the local network. The category with the highest percentile is boldfaced (the second highest is also boldfaced if within 0.3\% and greater than the overall percentage of articles considered to be hits). We also evaluated novelty defined as the 1st percentile of z-scores being negative. We report here on novelty defined at the most stringent parameter setting, while the remaining results are reported at \textcolor{blue}{https://bit.ly/2CFMOuf}.}}}
+\end{tabular}} \\
+\end{centering}
+%\addtabletext{}
+\end{table}
+​
+
+\begin{table}
+\begin{centering}
+\caption{Hit Rates By Category: Data Omits Articles with 10 or Fewer References}
+\vspace{3mm}
+\scalebox{0.8}{
+\begin{tabular}{|c crrrr r|}
+ \hline
+ Dataset  & Year& Highly Cited & LNLC & LNHC & HNLC & HNHC \\ 
+  \hline
+Applied Physics & 1985&1\%& 0.0& 0.3& \bf{1.3}& \bf{1.0} \\ 
+Applied Physics & 1985&2\%& 0.0& 1.2& \bf{2.8}& 1.6 \\ 
+Applied Physics & 1985&5\%& 0.0& 2.9& \bf{6.4}& 4.6 \\ 
+Applied Physics & 1985&10\%& 8.3& 5.6& \bf{11.7}& 10.2 \\ 
+Applied Physics & 1995&1\%& 0.0& 0.8& \bf{1.2}& 0.8 \\ 
+Applied Physics & 1995&2\%& 0.0& 1.8& \bf{2.4}& 1.7 \\ 
+Applied Physics & 1995&5\%& 0.0& 4.2& \bf{5.8}& 4.2 \\ 
+Applied Physics & 1995&10\%& 3.0& 8.3& \bf{12.}2& 9.4 \\ 
+Applied Physics & 2005&1\%& \bf{1.2}& 0.8& \bf{1.0}& \bf{1.1} \\ 
+Applied Physics & 2005&2\%& 1.2& 1.7& \bf{1.9}&\bf{ 2.2} \\ 
+Applied Physics & 2005&5\%& 3.6& 4.5& 4.7& \bf{5.7} \\ 
+Applied Physics & 2005&10\%& 6.0& 9.6& 9.8& \bf{11.1} \\ 
+\hline
+Immunology & 1985&1\%& 0.0& \bf{1.6}& 0.6& \bf{1.4} \\ 
+Immunology & 1985&2\%& 0.0& \bf{2.7}& 1.1& 3.1 \\ 
+Immunology & 1985&5\%& 9.1& 5.6& 3.3& \bf{7.2} \\ 
+Immunology & 1985&10\%& 9.1& 11.4& 7.5& \bf{13.1} \\ 
+Immunology & 1995&1\%& 0.0& \bf{2.1}& 0.5& 1.4 \\ 
+Immunology & 1995&2\%& 0.0& \bf{3.6}& 1.1& 2.7 \\ 
+Immunology & 1995&5\%& 1.6& \bf{7.8}& 3.1& 6.7 \\ 
+Immunology & 1995&10\%& 4.7& \bf{14.2}& 7.5& 12.2 \\ 
+Immunology & 2005&1\%& 0.0& \bf{1.6}& 0.6& \bf{1.3} \\ 
+Immunology & 2005&2\%& 0.0& \bf{3.1}& 1.3& 2.7 \\ 
+Immunology & 2005&5\%& 0.0& \bf{6.8}& 3.5& \bf{6.5} \\ 
+Immunology & 2005&10\%& 4.0& 12.1& 7.8& \bf{12.5} \\ 
+\hline
+Metabolism & 1985&1\%& 0.1& \bf{1.6}& 0.5& \bf{1.4} \\ 
+Metabolism & 1985&2\%& 0.4& \bf{3.0}& 1.2& \bf{2.7} \\ 
+Metabolism & 1985&5\%& 1.4& \bf{7.0} & 3.4& 6.6 \\ 
+Metabolism & 1985&10\%& 3.3& \bf{13.4} & 7.4& \bf{13.2} \\ 
+Metabolism & 1995&1\%& 0.1& \bf{1.7} & 0.5& 1.3 \\ 
+Metabolism & 1995&2\%& 0.3& \bf{3.3}& 1.1& 2.7 \\ 
+Metabolism & 1995&5\%& 0.9& \bf{7.4} & 3.3& 6.5 \\ 
+Metabolism & 1995&10\%& 2.8& \bf{13.9}& 7.3& 12.8 \\ 
+Metabolism & 2005&1\%& 0.7& \bf{1.4}& 0.7& \bf{1.2} \\ 
+Metabolism & 2005&2\%& 1.2& \bf{2.7}& 1.5& \bf{2.5} \\ 
+Metabolism & 2005&5\%& 2.7& \bf{6.3} & 3.8& \bf{6.4} \\ 
+Metabolism & 2005&10\%& 5.3& 12.0& 8.1& \bf{12.5} \\ 
+\hline
+Web of Science & 1985&1\%& 0.5& \bf{1.3}& 0.8& \bf{1.3} \\ 
+Web of Science & 1985&2\%& 1.2& \bf{2.5}& 1.7& \bf{2.6} \\ 
+Web of Science & 1985&5\%& 3.0& 6.0& 4.4& \bf{6.4} \\ 
+Web of Science & 1985&10\%& 7.0& 12.0& 9.2& \bf{12.7} \\ 
+Web of Science & 1995&1\%& 0.4& \bf{1.3}& 0.8& \bf{1.4} \\ 
+Web of Science & 1995&2\%& 1.0& \bf{2.5}& 1.7& \bf{2.8} \\ 
+Web of Science & 1995&5\%& 2.9& 6.0& 4.5& \bf{6.6} \\ 
+Web of Science & 1995&10\%& 6.4& 11.6& 9.3& \bf{12.9} \\ 
+Web of Science & 2005&1\%& 0.5& 1.1& 1.0& \bf{1.5} \\ 
+Web of Science & 2005&2\%& 1.2& 2.3& 1.9& \bf{2.9} \\ 
+Web of Science & 2005&5\%& 3.2& 5.6& 5.1& \bf{6.9} \\ 
+Web of Science & 2005&10\%& 6.9& 10.9& 10.1& \bf{12.9} \\ 
+\hline
+%\multicolumn{7}{l}{The hit rate is the percentage of publications in the referenced category that are in the top $1\%$, $2\%$, $5\%$, or $10\%$ of papers according to citation count  (see column 3) for novel articles defined as those with the 10th percentile z-score being negative. The z-scores are computed using the local network. The category with the highest percentile is boldfaced (the second highest is also boldfaced if within 0.3\% and greater than the overall percentage of articles considered to be hits). We also evaluated novelty defined as the 1st percentile of z-scores being negative. We report here on novelty defined at the most stringent parameter setting, while the remaining results are reported at \textcolor{blue}{https://bit.ly/2CFMOuf}.}
+\end{tabular}} \\
+\end{centering}
+%\addtabletext{}
+\end{table}
+
+
+
 
 
 \end{document}  
