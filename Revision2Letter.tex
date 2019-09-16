@@ -25,7 +25,7 @@ Dear Dr. Waltman:
 
 \vspace{5mm}
 \raggedright 
-Thank you for the opportunity to submit a revision. Again, we thank the reviewers for their diligence and professional courtesy. We have considered their comments and provide a response below. We have also responded to your suggestion that we include a discussion of the work of Wang, Veugelers, and Stephan. Our response is also reflected in a revised manuscript with blue text indicating where changes have been made to the first revision or where we have made minor edits to assist clarity. 
+Thank you for the opportunity to submit a revision. Again, we thank the reviewers for their diligence and professional courtesy. We have considered their comments and provide a response below. We have also responded to your suggestion that we include a discussion of the work of Wang, Veugelers, and Stephan. Our response is also reflected in a revised manuscript with blue text indicating where changes have been made to the first revision or where we have made edits to assist clarity. We have not highlighted minor edits amounting to punctuation or correction of typographic errors. 
 
 \vspace{3mm}
 Sincerely
@@ -50,18 +50,19 @@ In fact, what began as a simple experiment turned out to be quite complicated an
 Fig 9 of their paper shows a positive relationship between the number of references and the citations that differs in slope and intercept between subjects when a linear fit is applied to the data.  We evaluated the relationship between references and citation counts on all 9 local networks we analyzed in this paper using the approach of Vieira and Gomes. The results are very interesting. When plotting reference counts (independent variable on the x axis) against the mean of citation counts we see a linear relationship that gets noisy after about papers with 75 references or more (Figure 1 of this document below). This is consistent with the observations of Vieira and Gomes and not unexpected since the noisy part of the data could be accounted for by review articles. However, when plotting citation counts (independent variable on the x axis) against the mean of reference counts the results suggest that publications with a broad range of cited references can accrue similar citations over the first 8 years since publication (our Figures 2 \& 3). We conclude that Fig 9 of Vieira and Gomes masks the variance of citation counts when the mean citation count is plotted as a dependent variable. 
 
 Thus, the basis for arguing that reference counts generally correlates with citation counts seems a little shaky although it may be true for a narrow range and subset of articles (Figure 3, column 3 in particular). A number of factors help explain variance in citation counts (both Peters and van Raan \& Vieira and Gomes), particularly impact of publishing journal and impact of cited references so focusing on reference count alone seems distracting to the purpose of our paper. 
-
+\end{enumerate}
 \item Nevertheless, the reference count issue raised is interesting in itself (although it is not quite clear what is meant by signal) so we have added a sentence to the Discussion addressing it. The reviewer argues that 10 references (45 z-scores/article) would be a reassuring number. This choice appears intuitive rather than reasoned. In our manuscript, we chose to set the threshold at 2 references since it is the smallest number that yields a reference pair. This threshold also supports comparison with Uzzi's data. It is useful to be reminded that these reference pairs are then mapped to journal pairs whose frequencies are summed across the dataset being studied, then normalized, and finally returned to the parent article as z-scores. Lastly, there is a penalty for arbitrarily excluding low-reference publications. For example, restricting the applied physics dataset from 1985 (ap\_1985) to publications with 5 references or less results in a loss of 28\% of the publications and associated references. For the two biology-based datasets recovery of between 92-95 \% of the publications we analyzed occurs when a cutoff of 10 references is applied. For the applied\_physics dataset, which has different citation and reference characteristics, we would recover between 45-69\% for the three years we studied. For the complete WoS set, recovery ranges between 63-77\% (again consistent with allWos being a mixture of disciplines). This is not surprising, we expect disciplinary differences but a cutoff value of 10 references has different effects that need to be carefully studied along with the other variables that contribute to citation counts.
 
-\vspace{3mm} Even so, we have followed up on the question.The hit rates for (i) our original data sets and (ii) the hit rates for those same data sets omitting articles having 10 or fewer references are shown in Tables 1 and 2, respectively.  While omission of these articles poses difficulties with maintaining the feasibility of chi square hypothesis tests, these tables indicate that the hit rates do not change appreciably with the omission of these articles and, more importantly, the adjusted hit rates revisions still support the conclusions reached in the original version of our article.  The dominant hit rates have been highlighted in boldface for easy comparison of the two tables."}
-
+\vspace{3mm} Even so, we have followed up on the question.The hit rates for (i) our original data sets and (ii) the hit rates for those same data sets omitting articles having 10 or fewer references are shown in Tables 1 and 2, respectively.  While omission of these articles poses difficulties with maintaining the feasibility of chi square hypothesis tests, these tables indica
+te that the hit rates do not change appreciably with the omission of these articles and, more importantly, the adjusted hit rates revisions still support the conclusions reached in the original version of our article.  The dominant hit rates have been highlighted in boldface for easy comparison of the two tables."
+\end{itemize}
 \subsection{Reviewer 2}
 
 \emph{I would like to thank the authors for the revision.  However, I am afraid the revision has not sufficiently addressed my concerns. First, thanks for clarifying the reference shuffling.  Let’s say Pub A has a reference B, A is in discipline X and B in discipline Y.  I initially thought the local network approach swaps B with another reference which is also in discipline Y.  The authors actually did was to swap B with another reference from another paper which is in discipline X.  Is that correct?  The authors have clarified it in the paper, but I think it still needs to improved, maybe provide some illustrative examples.  Although my initial comment was because of misunderstanding the method, the underlying argument still holds.  It is still unclear whether global or discipline-specific novelty is more appropriate.  For example, bibliometrics papers cite a lot of mathematics paper, so in the pool of references cited by bibliometrics, combinations between bibliometrics and mathematics are very common. However, mathematics do not cite bibliometrics so much, then combinations between bibliometrices and mathematics seems rather unusual when examining the mathematics. I can see arguments supporting both the global and local approaches. I do not think this paper can get away with it without clarifying the conceptualization. Second, the relationship between novelty/conventionality and citation impact itself does not seem to be a ground truth. Using statistics about misspecification is based on a huge assumption, which needs to be made explicit and supported by conceptualization and theories.}
 
 \begin{itemize}
 \item An illustration has been generated that will be added to supplementary material that contains figures from the first rebuttal.
-\item Yes, the reviewer's description of our citation swapping strategy is now approximately correct. Further, a difference between bibliometrics and mathematics may be that bibliometrics papers cite mathematics papers more often than the other way around. The local model accounts for this but the global one does not. We argue consistently that local models reduce mis-specification and provide data to support the argument.
+\item Yes, the reviewer's description of our citation swapping strategy is now approximately correct. We have modified our description of the swapping algorithm in an attempt to make it more clear. Further, a difference between bibliometrics and mathematics may be that bibliometrics papers cite mathematics papers more often than the other way around. The local model accounts for this but the global one does not. We argue consistently that local models reduce mis-specification and provide data to support the argument.
 \item We agree with the reviewer that Uzzi et al. make an assumption regarding this connection between novelty, conventionality, and citation counts. We have not portrayed this assumption as a ground truth in the manuscript. This framework was developed by Uzzi et al. (2013) and we have used it to enable \emph{ceteris paribus} comparisons between our work and prior art. Furthermore, the analysis we provided using K-L divergence (between a generative model and the empirical data) establishes that there is a reduction in model misspecification by restricting to local networks and is independent of this assumption.
 \end{itemize}
 
@@ -84,7 +85,7 @@ Thus, the basis for arguing that reference counts generally correlates with cita
 \begin{figure}[tbhp]
 \centering
 \includegraphics[width=0.6\linewidth]{all_cit_ref_year_gp}     
-\caption{Inversion of axes unmasks variance in citation counts. In this case, the mean of reference counts is plotted as a dependent variable and citation counts are plotted as an independent variable. Data from 9 local networks analyzed in our paper are shown as in previous Figure. These results are not consistent with the observations  of Vieira and Gomes(2010)} 
+\caption{Inversion of axes unmasks variance in citation counts. In this case, the mean of reference counts is plotted as a dependent variable and citation counts are plotted as an independent variable. Data from 9 local networks analyzed in our paper are shown as in Figure 1(previous figure in this document). These results are not consistent with the observations  of Vieira and Gomes(2010)} 
 \label{fig:citref}
 \end{figure}
 \newpage
@@ -93,7 +94,7 @@ Thus, the basis for arguing that reference counts generally correlates with cita
 \centering
 \includegraphics[width=0.9\linewidth]{all_cit_ref_year_gp_zoom}     
 \caption{Inversion of axes unmasks variance in citation counts. In this case, the mean of reference counts is plotted as a dependent variable and citation counts are plotted as an independent variable [ZOOMED from Figure 2]. Data from 9 local networks analyzed in our paper are shown. To enable better visualization, the citation counts from Fig 2 are restricted at the lower end to the 90th percentile or greater for the ap\_1985 dataset (the smallest of the 9 datasets) and to an upper limit of 2000 citations to exclude a single outlier value,. These results are not consistent with the observations  of Vieira and Gomes(2010)} 
-\label{fig:refcit}
+\label{fig:citref2}
 \end{figure}
 \newpage
 
@@ -158,10 +159,8 @@ Web of Science & 2005&2\%& 0.9& 2.3& 2.0& \bf{3.4} \\
 Web of Science & 2005&5\%& 2.5& 5.7& 5.3& \bf{8.1} \\ 
 Web of Science & 2005&10\%& 5.6& 11.2& 10.8& \bf{15.0} \\
 \hline
-%\multicolumn{7}{l}{\multirow{5}{*}{\parbox{12cm}{The hit rate is the percentage of publications in the referenced category that are in the top $1\%$, $2\%$, $5\%$, or $10\%$ of papers according to citation count  (see column 3) for novel articles defined as those with the 10th percentile z-score being negative. The z-scores are computed using the local network. The category with the highest percentile is boldfaced (the second highest is also boldfaced if within 0.3\% and greater than the overall percentage of articles considered to be hits). We also evaluated novelty defined as the 1st percentile of z-scores being negative. We report here on novelty defined at the most stringent parameter setting, while the remaining results are reported at \textcolor{blue}{https://bit.ly/2CFMOuf}.}}}
-\end{tabular}} \\
+\end{tabular}} 
 \end{centering}
-%\addtabletext{}
 \end{table}
 ​
 
