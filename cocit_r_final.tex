@@ -59,6 +59,16 @@ Sitaram Devarakonda\affil{2}, Avon Davey\affil{2}, Dmitriy Korobskiy\affil{2}, S
 \correspondingauthor{George Chacko}{netelabs@nete.com}
 \keywords{co-citation analysis, bibliometrics, random graphs }
 
+% ORCID_ids
+% James Bradley: 0000-0001-8766-6830
+% Sitaram Devarakonda: 0000-0001-7722-756X
+% Avon Davey: 0000-0002-1221-9283
+% Dmitriy Korobskiy: 0000-0002-7909-0218
+% Siyu Liu: 0000-0003-4051-2476
+% Djamil Lakhdar-Hamina: 0000-0002-8209-093X
+% Tandy Warnow: 0000-0001-7717-3514
+% George Chacko: 0000-0002-2127-1892
+
 \begin{abstract}
 Citation analysis of the scientific literature has been used to study and define disciplinary boundaries, to trace the dissemination of knowledge, and to estimate impact. Co-citation, the frequency with which pairs of publications are cited, provides insight into how documents relate to each other and across fields. Co-citation analysis has been used to characterize combinations of prior work as conventional or innovative and to derive features of highly cited publications. Given the organization of science into disciplines, a key question is the sensitivity of such analyses to frame of reference. Our study examines this question using  semantically-themed citation networks. We observe that trends reported to be true across the scientific literature do not hold for focused citation networks, and we conclude that inferring novelty using co-citation analysis and random graph models benefits from disciplinary context.
 \end{abstract}
@@ -165,7 +175,7 @@ To study the disciplinary composition of references in our custom data sets, we 
 
 \begin{figure}%[tbhp]
 \centering
-\includegraphics[width=0.6\linewidth]{background-effect}     
+\includegraphics[width=0.6\linewidth]{background-effect_final}     
 \caption{Citation shuffling using the local network preserves the disciplinary composition of references within networks, but using the global network does not.  Publications of type Article belonging to the three disciplinary networks (ap=applied physics, imm=immunology, and  metab=metabolism) were subject to a single shuffle of all their cited references using either the local network (i.e., the cited references in these networks, denoted  bg\_local) or the global network (i.e., references from all articles in WoS, denoted bg\_WoS) as the source of allowed substitutions, where ``bg'' indicates the disciplinary network. Citation shuffling was performed using either our algorithm (\emph{repcs}, top row)
  or that of Uzzi et al.~(\emph{umsj}, bottom row).
  The disciplinary composition of cited references before and after shuffling was measured as frequencies for each of 153 sub-disciplines (from the extended subject classification in WoS) and expressed as a fold difference between citation counts grouped by subject for original (o) and shuffled (s) references using the formula (fold\_difference = $ifelse(o > s, o/s, s/o)$) and rounded to the nearest integer. A fold difference of $1$ indicates that citation shuffling did not alter disciplinary composition. Data are shown for articles published in 1985. All eight boxplots are generated from 153 observations each. Null values were set to $1$. Note y-axis values: $log_2$} 
@@ -256,10 +266,11 @@ We note that journals are used as grouping units for articles in the three studi
 Such a grouping, while appealing on account of relative simplicity, obscures measurements of novel pairings at the article level. Journals are also of limited use in representing individual fields, and repeating some of these studies using article clusters may be more informative~\citep{traag_louvain_2019, klavans_which_2017}. Various factors contribute to citation counts \citep{peters_determinants_1994, vieira_citations_2010} and further study of these in the context of co-citation analysis may be of interest. We also acknowledge the limitations of using citation counts to identify impactful publications. Overall, evaluation in context~\citep{hicks_bibliometrics:_2015} and further consideration of the disciplinary nature of the scientific enterprise is likely to result in improved models that yield further knowledge.
 
 \acknowledgments
- We thank the authors of \citep{uzzi_atypical_2013} for sharing their simulation code. We are grateful to Kevin Boyack and Dick Klavans for constructively critical discussions. We thank the editor and two anonymous reviewers for their insightful comments. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. Code generated for this study is freely available from our Github site~\citep{GithubERNIE2019}. His contributions to this manuscript were made when he was a full time employee of NET ESolutions Corporation.
- Access to the bibliographic data analyzed in this study requires a license from Clarivate Analytics, which had no role in funding, experimental design, review of results, and conclusions presented. 
+ We thank the authors of \citep{uzzi_atypical_2013} for sharing their simulation code. We are grateful to Kevin Boyack and Dick Klavans for constructively critical discussions. We thank the editor and two anonymous reviewers for their insightful comments. Research and development reported in this publication was partially supported by Federal funds from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services, under Contract Nos. HHSN271201700053C (N43DA-17-1216) and HHSN271201800040C (N44DA-18-1216). The content of this publication is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. TW receives funding from the Grainger Foundation. Avon Davey's present affiliation is GlaxoSmithKline, Research Triangle Park, NC, USA. His contributions to this manuscript were made when he was a full time employee of NET ESolutions Corporation. The authors do not declare any competing interests. Access to the bibliographic data analyzed in this study requires a license from Clarivate Analytics, which had no role in funding, experimental design, review of results, and conclusions presented. Code generated for this study is freely available from our Github site~\citep{GithubERNIE2019}. 
+
 \authorcontributions 
-This study was designed by GC, JB, SD, and TW. Simulations and analysis were performed by AD, DLH, GC, JB, and SD. Infrastructure and workflows used to generate data used in this study were developed by AD, DK, SL, SD, and GC.  All authors reviewed the manuscript, which was written by GC, JB, and TW. Avon Davey's present affiliation is GlaxoSmithKline, Research Triangle Park, NC, USA.
+Conceptualization, GC, JB, SD, and TW; Methodology, AD, DK, GC, JB, SD, SL, and TW; Investigation, DL-H, GC, JB, and SD; Writing -Original Draft, GC, JB, TW; Writing- Review and Editing, AD, DK, DL-H, GC, JB, SD, SL, and  TW;
+Funding Acquisition, GC; Resources, DK and GC; Supervision, GC. Authors are listed in alphabetic order. 
 
 \bibliography{cocit_r}
 
